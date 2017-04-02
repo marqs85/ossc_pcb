@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DPDT
+D inverseur
+K switch
+$ENDCMP
+#
+#End Doc Library
