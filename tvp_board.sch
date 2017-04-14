@@ -60,7 +60,7 @@ L SCART-F J3
 U 1 1 53F623BC
 P 1500 3550
 F 0 "J3" H 1500 4750 60  0000 C CNN
-F 1 "SCART-F" H 1540 2350 60  0000 C CNN
+F 1 "JP21" H 1540 2350 60  0000 C CNN
 F 2 "custom_components:SCART_CONN" H 1500 3550 60  0001 C CNN
 F 3 "" H 1500 3550 60  0000 C CNN
 	1    1500 3550
@@ -195,29 +195,12 @@ Text Label 10950 6550 0    60   ~ 0
 DVDD
 Text Label 600  5550 0    60   ~ 0
 GND
-Text Label 600  2600 0    60   ~ 0
-GND
-Text Label 600  3000 0    60   ~ 0
-GND
-Text Label 600  3400 0    60   ~ 0
-GND
-Text Label 600  3800 0    60   ~ 0
-GND
-Text Label 600  4200 0    60   ~ 0
-GND
 Text Label 550  3200 0    60   ~ 0
 RGB1_R
-Text Label 550  3600 0    60   ~ 0
+Text Label 550  2800 0    60   ~ 0
 RGB1_G
-Text Label 550  4000 0    60   ~ 0
+Text Label 2200 2650 1    60   ~ 0
 RGB1_B
-NoConn ~ 2100 3100
-NoConn ~ 900  2800
-NoConn ~ 900  4400
-NoConn ~ 900  4600
-NoConn ~ 2100 3900
-NoConn ~ 2100 3700
-NoConn ~ 2100 3500
 Text Label 600  1750 0    60   ~ 0
 RGB3_R
 Text Label 600  1550 0    60   ~ 0
@@ -1451,7 +1434,7 @@ Text Label 10600 1950 0    60   ~ 0
 B_7
 Text Label 9450 2750 0    60   ~ 0
 RESET_N
-Text Label 2200 2650 1    60   ~ 0
+Text Label 550  3800 0    60   ~ 0
 RGB1_S
 $Comp
 L PWR_FLAG #FLG0131
@@ -2057,28 +2040,6 @@ F 3 "~" H 2450 2650 60  0000 C CNN
 	1    2450 2650
 	0    1    1    0   
 $EndComp
-$Comp
-L GND-RESCUE-ossc_board #PWR0151
-U 1 1 55F23807
-P 2100 3300
-F 0 "#PWR0151" H 2100 3300 30  0001 C CNN
-F 1 "GND" H 2100 3230 30  0001 C CNN
-F 2 "" H 2100 3300 60  0001 C CNN
-F 3 "" H 2100 3300 60  0000 C CNN
-	1    2100 3300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GND-RESCUE-ossc_board #PWR0152
-U 1 1 55F239ED
-P 2100 2900
-F 0 "#PWR0152" H 2100 2900 30  0001 C CNN
-F 1 "GND" H 2100 2830 30  0001 C CNN
-F 2 "" H 2100 2900 60  0001 C CNN
-F 3 "" H 2100 2900 60  0000 C CNN
-	1    2100 2900
-	0    -1   -1   0   
-$EndComp
 Text Label 2450 2250 1    60   ~ 0
 AVDD
 $Comp
@@ -2157,20 +2118,9 @@ F 3 "" H 3950 5700 60  0000 C CNN
 	1    3950 5700
 	0    1    1    0   
 $EndComp
-$Comp
-L GND-RESCUE-ossc_board #PWR0157
-U 1 1 55F7E41D
-P 2100 4300
-F 0 "#PWR0157" H 2100 4300 30  0001 C CNN
-F 1 "GND" H 2100 4230 30  0001 C CNN
-F 2 "" H 2100 4300 60  0001 C CNN
-F 3 "" H 2100 4300 60  0000 C CNN
-	1    2100 4300
-	0    -1   -1   0   
-$EndComp
-Text Label 2300 4900 1    60   ~ 0
+Text Label 500  4600 0    60   ~ 0
 AV1_AUD_L
-Text Label 2150 4900 1    60   ~ 0
+Text Label 500  4200 0    60   ~ 0
 AV1_AUD_R
 $Comp
 L C C36
@@ -2298,14 +2248,6 @@ Wire Wire Line
 	4400 6650 4250 6650
 Wire Wire Line
 	4400 6700 4400 6650
-Wire Wire Line
-	2150 4500 2150 4900
-Wire Wire Line
-	2100 4500 2150 4500
-Wire Wire Line
-	2300 4100 2300 4900
-Wire Wire Line
-	2100 4100 2300 4100
 Wire Wire Line
 	2450 2000 2450 2300
 Connection ~ 6200 1600
@@ -2662,21 +2604,11 @@ Wire Wire Line
 Wire Wire Line
 	600  1750 900  1750
 Wire Wire Line
-	900  4000 550  4000
-Wire Wire Line
-	900  3600 550  3600
-Wire Wire Line
-	900  3200 550  3200
-Wire Wire Line
-	900  2600 550  2600
-Wire Wire Line
-	900  3000 550  3000
-Wire Wire Line
-	900  3400 550  3400
-Wire Wire Line
 	900  3800 550  3800
 Wire Wire Line
-	900  4200 550  4200
+	900  2800 550  2800
+Wire Wire Line
+	900  3200 550  3200
 Wire Wire Line
 	550  5250 850  5250
 Wire Wire Line
@@ -2854,4 +2786,113 @@ Wire Wire Line
 	3850 5550 3750 5550
 Wire Wire Line
 	3950 5900 3750 5900
+Wire Wire Line
+	900  4200 500  4200
+Wire Wire Line
+	900  4600 500  4600
+$Comp
+L GND #PWR?
+U 1 1 58F0DD5B
+P 900 2600
+F 0 "#PWR?" H 900 2350 50  0001 C CNN
+F 1 "GND" H 900 2450 50  0001 C CNN
+F 2 "" H 900 2600 50  0000 C CNN
+F 3 "" H 900 2600 50  0000 C CNN
+	1    900  2600
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58F0DF83
+P 900 3400
+F 0 "#PWR?" H 900 3150 50  0001 C CNN
+F 1 "GND" H 900 3250 50  0001 C CNN
+F 2 "" H 900 3400 50  0000 C CNN
+F 3 "" H 900 3400 50  0000 C CNN
+	1    900  3400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58F0E093
+P 900 3000
+F 0 "#PWR?" H 900 2750 50  0001 C CNN
+F 1 "GND" H 900 2850 50  0001 C CNN
+F 2 "" H 900 3000 50  0000 C CNN
+F 3 "" H 900 3000 50  0000 C CNN
+	1    900  3000
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58F0E1A3
+P 900 4000
+F 0 "#PWR?" H 900 3750 50  0001 C CNN
+F 1 "GND" H 900 3850 50  0001 C CNN
+F 2 "" H 900 4000 50  0000 C CNN
+F 3 "" H 900 4000 50  0000 C CNN
+	1    900  4000
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58F0E2B3
+P 2100 2900
+F 0 "#PWR?" H 2100 2650 50  0001 C CNN
+F 1 "GND" H 2100 2750 50  0001 C CNN
+F 2 "" H 2100 2900 50  0000 C CNN
+F 3 "" H 2100 2900 50  0000 C CNN
+	1    2100 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58F0E3C3
+P 900 4400
+F 0 "#PWR?" H 900 4150 50  0001 C CNN
+F 1 "GND" H 900 4250 50  0001 C CNN
+F 2 "" H 900 4400 50  0000 C CNN
+F 3 "" H 900 4400 50  0000 C CNN
+	1    900  4400
+	0    1    1    0   
+$EndComp
+NoConn ~ 2100 4500
+NoConn ~ 2100 4100
+NoConn ~ 900  3600
+NoConn ~ 2100 3500
+NoConn ~ 2100 3700
+NoConn ~ 2100 3100
+$Comp
+L GND #PWR?
+U 1 1 58F0EABE
+P 2100 4300
+F 0 "#PWR?" H 2100 4050 50  0001 C CNN
+F 1 "GND" H 2100 4150 50  0001 C CNN
+F 2 "" H 2100 4300 50  0000 C CNN
+F 3 "" H 2100 4300 50  0000 C CNN
+	1    2100 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58F0EBCE
+P 2100 3900
+F 0 "#PWR?" H 2100 3650 50  0001 C CNN
+F 1 "GND" H 2100 3750 50  0001 C CNN
+F 2 "" H 2100 3900 50  0000 C CNN
+F 3 "" H 2100 3900 50  0000 C CNN
+	1    2100 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58F0ECDE
+P 2100 3300
+F 0 "#PWR?" H 2100 3050 50  0001 C CNN
+F 1 "GND" H 2100 3150 50  0001 C CNN
+F 2 "" H 2100 3300 50  0000 C CNN
+F 3 "" H 2100 3300 50  0000 C CNN
+	1    2100 3300
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
