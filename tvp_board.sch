@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:ossc_board-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
 Title "Open Source Scan Converter"
-Date "2017-03-12"
+Date "2017-04-14"
 Rev "1.6"
 Comp ""
 Comment1 ""
@@ -2143,9 +2142,9 @@ F 3 "" H 4150 5800 60  0000 C CNN
 	1    4150 5800
 	1    0    0    -1  
 $EndComp
-Text Label 2250 5450 0    60   ~ 0
+Text Label 2250 5650 0    60   ~ 0
 AV1_AUD_L
-Text Label 2250 5800 0    60   ~ 0
+Text Label 2250 6000 0    60   ~ 0
 AV1_AUD_R
 $Comp
 L GND-RESCUE-ossc_board #PWR0156
@@ -2790,9 +2789,9 @@ Text HLabel 9900 3450 2    60   Output ~ 0
 5V
 Wire Wire Line
 	9350 3450 9900 3450
-Text HLabel 2700 5650 0    60   Output ~ 0
+Text HLabel 2750 5450 0    60   Output ~ 0
 AV2_AUD_L
-Text HLabel 2700 6000 0    60   Output ~ 0
+Text HLabel 2750 5800 0    60   Output ~ 0
 AV2_AUD_R
 $Comp
 L CONN_01X03 J7
@@ -2835,22 +2834,18 @@ AV1_AUD_R
 $Comp
 L DPDT SW4
 U 1 1 58D31ED2
-P 3250 5700
-F 0 "SW4" H 3250 6100 50  0000 C CNN
-F 1 "DPDT" H 3250 5350 50  0000 C CNN
-F 2 "custom_components:MS22" H 3250 5900 50  0001 C CNN
-F 3 "" H 3250 5900 50  0000 C CNN
-	1    3250 5700
-	-1   0    0    1   
+P 3250 5750
+F 0 "SW4" H 3250 6150 50  0000 C CNN
+F 1 "DPDT" H 3250 5400 50  0000 C CNN
+F 2 "custom_components:MS22" H 3250 5950 50  0001 C CNN
+F 3 "" H 3250 5950 50  0000 C CNN
+	1    3250 5750
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 5450 2750 5450
+	2250 5650 2750 5650
 Wire Wire Line
-	2750 5650 2700 5650
-Wire Wire Line
-	2250 5800 2750 5800
-Wire Wire Line
-	2700 6000 2750 6000
+	2250 6000 2750 6000
 Wire Wire Line
 	3950 5800 3850 5800
 Wire Wire Line

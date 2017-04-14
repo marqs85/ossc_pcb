@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:ossc_board-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
 Title "Open Source Scan Converter"
-Date "2017-03-12"
+Date "2017-04-14"
 Rev "1.6"
 Comp ""
 Comment1 ""
