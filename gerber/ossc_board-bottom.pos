@@ -1,4 +1,4 @@
-### Module positions - created on Fri Apr 14 10:31:05 2017 ###
+### Module positions - created on Sun Jun 25 23:35:04 2017 ###
 ### Printed by Pcbnew version kicad 4.0.5+dfsg1-4
 ## Unit = mm, Angle = deg.
 ## Side : bottom
@@ -104,6 +104,7 @@ FB4       MPZ1608S221A    SM0603_Resistor_libcms                       112.9970 
 FB5       MPZ1608S221A    SM0603_Resistor_libcms                        35.3340   -34.0460    0.0000  bottom
 FB6       MPZ1608S221A    SM0603_Resistor_libcms                        41.5649   -54.3551  270.0000  bottom
 FB7       MPZ1608S221A    SM0603_Resistor_libcms                        35.0625   -48.0178    0.0000  bottom
+P3        mSD_CONN        DM3D-SF                                       67.9880   -19.3050    0.0000  bottom
 Q1        BC847           SOT-23_Handsoldering                          58.3160   -25.3170  270.0000  bottom
 R1        75              SM0603_Resistor_libcms                        40.6886   -59.9812   90.0000  bottom
 R2        75              SM0603_Resistor_libcms                        46.0600   -58.9380   90.0000  bottom

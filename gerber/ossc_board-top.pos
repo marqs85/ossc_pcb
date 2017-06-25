@@ -1,4 +1,4 @@
-### Module positions - created on Fri Apr 14 10:31:05 2017 ###
+### Module positions - created on Sun Jun 25 23:35:04 2017 ###
 ### Printed by Pcbnew version kicad 4.0.5+dfsg1-4
 ## Unit = mm, Angle = deg.
 ## Side : top
@@ -38,6 +38,8 @@ C119      2.2u           SM0603_Capa_libcms                             112.4100
 C120      2.2u           SM0603_Capa_libcms                             109.0350   -64.3590  180.0000  top
 D1        LEDR           LED-0603                                        17.1790   -19.5450   90.0000  top
 D2        LEDG           LED-0603                                        15.5490   -19.5450   90.0000  top
+D6        RClamp0524P    SLP2510P8                                      120.1200   -50.3100  270.0000  top
+D7        RClamp0524P    SLP2510P8                                      120.1200   -53.3100  270.0000  top
 F2        MF-FSMF020X-2  SM0603_Resistor_libcms                         116.6900   -60.1400   90.0000  top
 Q2        BC857          SOT-23_Handsoldering                            54.1930   -25.3290  270.0000  top
 R3        75             SM0603_Resistor_libcms                          35.9007   -59.5367    0.0000  top
@@ -72,5 +74,6 @@ U3        IT6613         TQFP-100_custom                                107.3000
 U4        SN74LVC2G17    SOT-23-6_Handsoldering                          27.4933   -49.2878  270.0000  top
 U5        AP7361C        SOT-223_Handsoldering                           31.5770   -27.6560    0.0000  top
 U8        PCM1862        TSSOP-30_4.4x7.8mm_Pitch0.5mm_Handsoldering    110.6220   -69.2300  270.0000  top
+U11       IRM-V538/TR1   IRM-V5XX_TR1                                    73.2641   -21.3605    0.0000  top
 U17       THS7353        TSSOP-20_4.4x6.5mm_Pitch0.65mm_Handsoldering    46.8880   -67.3240   90.0000  top
 ## End

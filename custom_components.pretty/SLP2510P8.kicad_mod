@@ -1,4 +1,5 @@
 (module SLP2510P8 (layer F.Cu) (tedit 58EE7743)
+  (attr smd)
   (fp_text reference REF** (at 2.26822 -0.03048 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
