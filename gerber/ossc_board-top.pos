@@ -1,4 +1,4 @@
-### Module positions - created on Sun Jun 25 23:35:04 2017 ###
+### Module positions - created on Mon Jul  3 23:58:30 2017 ###
 ### Printed by Pcbnew version kicad 4.0.5+dfsg1-4
 ## Unit = mm, Angle = deg.
 ## Side : top
@@ -50,7 +50,7 @@ R7        75             SM0603_Resistor_libcms                          55.0015
 R8        75             SM0603_Resistor_libcms                          54.9970   -66.7850   90.0000  top
 R9        75             SM0603_Resistor_libcms                          40.1040   -73.0150   90.0000  top
 R11       1.5k           SM0603_Resistor_libcms                          36.0630   -49.7790    0.0000  top
-R12       330            SM0603_Resistor_libcms                          24.6358   -51.7643  180.0000  top
+R12       220            SM0603_Resistor_libcms                          24.6358   -51.7643  180.0000  top
 R13       2.2k           SM0603_Resistor_libcms                          39.3700   -41.6560  270.0000  top
 R14       2.2k           SM0603_Resistor_libcms                          44.9310   -36.6060   90.0000  top
 R15       2.2k           SM0603_Resistor_libcms                          45.6162   -39.7755  270.0000  top

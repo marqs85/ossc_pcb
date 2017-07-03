@@ -36,8 +36,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
 Title "Open Source Scan Converter"
-Date "2017-04-14"
-Rev "1.6"
+Date "2017-07-03"
+Rev "1.6-jp21"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1055,7 +1055,7 @@ L R-RESCUE-ossc_board R12
 U 1 1 53FD236B
 P 6700 1050
 F 0 "R12" V 6780 1050 40  0000 C CNN
-F 1 "330" V 6707 1051 40  0000 C CNN
+F 1 "220" V 6707 1051 40  0000 C CNN
 F 2 "custom_components:SM0603_Resistor_libcms" V 6630 1050 30  0001 C CNN
 F 3 "~" H 6700 1050 30  0000 C CNN
 	1    6700 1050
