@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "Open Source Scan Converter"
-Date "2017-04-14"
+Date "2017-07-03"
 Rev "1.6"
 Comp ""
 Comment1 ""
