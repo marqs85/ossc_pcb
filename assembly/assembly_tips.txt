@@ -1,0 +1,38 @@
+Soldering:
+
+A temperature-controlled soldering iron and minimum 2 tips (one fine and one slightly larger) are required for hand soldering to be feasible. I've been using leaded solder as it's much better when soldering things manually (just need to be aware of the precautions). Flux is also a must when soldering QFPs - I've been using Kester 186 flux pen (RMA) with good results. Earlier I had some non-clean fluxes which didn't work that well for me (but were still usable). As for the iron temperature, I've been using 300-340 celsius depending on type of component to solder. You preferences may vary, but I recommend avoiding high temperatures when soldering thin metals such as QFP legs.
+
+
+Example Workflow:
+
+I started by soldering the 3 main QFP ICs (described in next section) since they were the hardest part. It was easier to fix things like solder bridges when there was no other components around them. Then I soldered all 0603 SMD components (starting with 0.1uF caps which had the highest count), followed by other SMD components. After those, I soldered connectors and other big parts, and character LCD display last.
+
+
+QPF soldering:
+
+As you know, QPFs are not that hard to solder as it initially looks. However, 2 of these has a thermal pad (for heat transfer and good gnd contact) at the bottom which creates additional challenge. You may have better QFP workflow/strategy than I, but below is a short description on what worked well for me. I begun by appying a small amount of solder paste on the thermal pad on PCB (around the hole in the middle), after which I drew a thin layer of flux on the normal pads with the pen. Then I firmly pressed and aligned the IC on place, carefully added flux on all legs with the pen, and then soldered 2 opposing corners. After verifying that the chip was still in good orientation, I soldered 2 other sides, and then then rest. A bit surprisingly, I think soldering result was better with slightly larger tip instead of the smallest tip I had. Also, temperature didn't need to be high as the pads and legs are so thin (I used 300 celsius).  At the end, I soldered the thermal pad by heating it from the the other side using bigger tip and higher temperature. It's hard to say when that contact is good - one needs to be careful not to heat it too much and risk burning the chip, but on the other hand a weak thermal pad connection (especially FPGA) can lead to reliability issues, e.g. the system not powering up or suddenly turning off while in use. I pushed the iron tip on the hole but tried to align it so that it'd touch only the PCB pad/via and not directly the pad on the IC. It takes a while for the PCB pad to warm up as it's part of a big ground plane. I kept my finger on the top side of the IC and took off the tip when it became too hot to keep it there :). I think the process took around 10 seconds when the iron was set at 330 celsius, but it depends on several things so that shouldn't be taken as an universal guideline. If you have a hot air station, it might be better to use that instead of iron for the thermal pad.
+
+
+0603 components:
+
+These were relatively easy, but numerous. I could do them with good pace by first adding some solder (with a fine tip) to the other pad of a group of nearby 0603s (e.g. all 1uF caps). Then I put the components on place via pliers while simultaneously heating the pad where I had added solder earlier. Then I heated the section of the solderless pad which was still visible around the component outlines (easy with a fine tip if you aligned the component slightly towards the initially soldered pad) and added solder there which also attached simultaneously to the component. Just notice that several of the 0603 component pads are connected to gnd plane, and even if there is a thermal relief, they take longer to heat up. I used 320 celsius and a fine tip when soldering 0603 components.
+
+
+Misc tips:
+
+-U4 IC doesn't have very clear orientation mark on the package. In correct orientation, "C" out of the package code letters is closest to the oscillator next to U4.
+-It's recommended to solder HDMI connector assembly on both top and bottom sides to minimize the risk of it breaking loose when connecting cables.
+-Don't use hot air for soldering LCD display legs, or at least shield the display with foil in that case to avoid damaging it.
+-Heatsink is meant for TCP7002 IC since it can get quite hot with high pixel clocks.
+-After soldering all components, clip off long legs (SCART & component connectors, power switch) underside PCB to allow case fitting properly.
+
+
+Verification:
+
+1. Before turning on power (DC 5V / center positive / min. 1A supply), it's a good idea to check that power supply lines are not shorted to ground. It can be done easiest by checking all the regulators:
+-on bottom side, there are 8 small regulators in SOT-23-5 packages (U6, U7 etc.). Verify with a continuity meter that only the middle pin on the side with 3 legs is connected to ground
+-on top side, there is one larger regulator (U5) behind the display. Verify that only the middle pin (on the side with 3 pins) and the heatsink pin are connected to GND
+
+2. I also recommend checking that all regulators are on correct places since they have similar footprints - if they are swapped with each other, powering the system will kill several ICs
+
+3. Last but not least, remember to use a good quality 5V PSU with correct polarity (center positive). Regulated power supplies are recommended over unregulated ones in order to avoid overheating and damaging some regulators (max. recommended input voltage is 5.5V). If you are planning to use a cheap no-name PSU, please measure output voltage beforehand to avoid nasty surprises.
