@@ -1,36 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:custom_components
+EESchema Schematic File Version 4
 LIBS:ossc_board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -217,7 +187,7 @@ F41 "AV3_AUD_L" I L 8350 6500 60
 F42 "AV3_AUD_R" I L 8350 6600 60 
 $EndSheet
 $Comp
-L CONN_01X01 MH1
+L ossc_board-rescue:CONN_01X01 MH1
 U 1 1 55126368
 P 1250 950
 F 0 "MH1" H 1330 950 40  0000 L CNN
@@ -228,7 +198,7 @@ F 3 "" H 1250 950 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X01 MH3
+L ossc_board-rescue:CONN_01X01 MH3
 U 1 1 55129B56
 P 1350 6250
 F 0 "MH3" H 1430 6250 40  0000 L CNN
@@ -239,7 +209,7 @@ F 3 "" H 1350 6250 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X01 MH2
+L ossc_board-rescue:CONN_01X01 MH2
 U 1 1 5512C83E
 P 10450 1000
 F 0 "MH2" H 10530 1000 40  0000 L CNN
@@ -250,7 +220,7 @@ F 3 "" H 10450 1000 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X01 MH4
+L ossc_board-rescue:CONN_01X01 MH4
 U 1 1 5512E422
 P 10400 6200
 F 0 "MH4" H 10480 6200 40  0000 L CNN
@@ -317,9 +287,9 @@ Wire Wire Line
 Wire Wire Line
 	3050 4300 4150 4300
 Wire Wire Line
-	3050 4600 4650 4600
+	3050 4600 4350 4600
 Wire Wire Line
-	3050 4700 4650 4700
+	3050 4700 4500 4700
 Wire Wire Line
 	6750 1050 8350 1050
 Wire Wire Line
@@ -377,7 +347,7 @@ Wire Wire Line
 Wire Wire Line
 	6750 4050 8350 4050
 Wire Wire Line
-	6750 4300 8350 4300
+	6750 4300 6950 4300
 Wire Wire Line
 	6750 4400 8350 4400
 Wire Wire Line
@@ -399,7 +369,7 @@ Wire Wire Line
 Wire Notes Line
 	8950 5700 9550 5700
 Wire Wire Line
-	3050 5550 8350 5550
+	3050 5550 3800 5550
 Wire Wire Line
 	3050 5650 8350 5650
 Wire Notes Line
@@ -486,4 +456,12 @@ Wire Wire Line
 	3050 6500 8350 6500
 Wire Wire Line
 	3050 6600 8350 6600
+Wire Wire Line
+	4500 4700 4650 4700
+Wire Wire Line
+	4350 4600 4650 4600
+Wire Wire Line
+	6950 4300 8350 4300
+Wire Wire Line
+	3800 5550 8350 5550
 $EndSCHEMATC

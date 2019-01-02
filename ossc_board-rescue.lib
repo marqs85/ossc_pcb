@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# ossc_board-rescue_3xRCA_CONN
+# 3xRCA_CONN
 #
-DEF ossc_board-rescue_3xRCA_CONN U 0 40 Y Y 1 F N
+DEF 3xRCA_CONN U 0 40 Y Y 1 F N
 F0 "U" 0 -100 50 H V C CNN
-F1 "ossc_board-rescue_3xRCA_CONN" 0 100 50 H V C CNN
+F1 "3xRCA_CONN" 0 100 50 H V C CNN
 F2 "MODULE" 0 0 50 H I C CNN
 F3 "DOCUMENTATION" 0 0 50 H I C CNN
 DRAW
@@ -17,11 +17,11 @@ X GND 4 -750 -150 300 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_ACHL-27MHZ-EK
+# ACHL-27MHZ-EK
 #
-DEF ossc_board-rescue_ACHL-27MHZ-EK U 0 40 Y Y 1 F N
+DEF ACHL-27MHZ-EK U 0 40 Y Y 1 F N
 F0 "U" 0 -100 50 H V C CNN
-F1 "ossc_board-rescue_ACHL-27MHZ-EK" 0 100 50 H V C CNN
+F1 "ACHL-27MHZ-EK" 0 100 50 H V C CNN
 F2 "MODULE" 0 0 50 H I C CNN
 F3 "DOCUMENTATION" 0 0 50 H I C CNN
 DRAW
@@ -33,11 +33,11 @@ X VDD 8 950 50 300 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_BARREL_JACK
+# BARREL_JACK
 #
-DEF ossc_board-rescue_BARREL_JACK CON 0 40 Y Y 1 F N
+DEF BARREL_JACK CON 0 40 Y Y 1 F N
 F0 "CON" 0 250 50 H V C CNN
-F1 "ossc_board-rescue_BARREL_JACK" 0 -200 50 H V C CNN
+F1 "BARREL_JACK" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -54,11 +54,11 @@ X ~ 3 300 0 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_BC849
+# BC849
 #
-DEF ossc_board-rescue_BC849 Q 0 0 Y Y 1 F N
+DEF BC849 Q 0 0 Y Y 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "ossc_board-rescue_BC849" 200 0 50 H V L CNN
+F1 "BC849" 200 0 50 H V L CNN
 F2 "SOT-23" 200 -75 50 H V L CIN
 F3 "" 0 0 50 H V L CNN
 $FPLIST
@@ -77,11 +77,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_BC857
+# BC857
 #
-DEF ossc_board-rescue_BC857 Q 0 0 Y Y 1 F N
+DEF BC857 Q 0 0 Y Y 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "ossc_board-rescue_BC857" 200 0 50 H V L CNN
+F1 "BC857" 200 0 50 H V L CNN
 F2 "SOT-23" 200 -75 50 H V L CIN
 F3 "" 0 0 50 H V L CNN
 $FPLIST
@@ -100,11 +100,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_C
+# C
 #
-DEF ossc_board-rescue_C C 0 10 N Y 1 F N
+DEF C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "ossc_board-rescue_C" 25 -100 50 H V L CNN
+F1 "C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -122,11 +122,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_C-RESCUE-ossc_board
+# C-RESCUE-ossc_board
 #
-DEF ossc_board-rescue_C-RESCUE-ossc_board C 0 10 N Y 1 F N
+DEF C-RESCUE-ossc_board C 0 10 N Y 1 F N
 F0 "C" 0 100 40 H V L CNN
-F1 "ossc_board-rescue_C-RESCUE-ossc_board" 6 -85 40 H V L CNN
+F1 "C-RESCUE-ossc_board" 6 -85 40 H V L CNN
 F2 "" 38 -150 30 H V C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -142,11 +142,11 @@ X ~ 2 0 -200 170 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_CONN_01X01
+# CONN_01X01
 #
-DEF ossc_board-rescue_CONN_01X01 P 0 40 Y N 1 F N
+DEF CONN_01X01 P 0 40 Y N 1 F N
 F0 "P" 0 100 50 H V C CNN
-F1 "ossc_board-rescue_CONN_01X01" 100 0 50 V V C CNN
+F1 "CONN_01X01" 100 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -162,11 +162,11 @@ X P1 1 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_CONN_01X03
+# CONN_01X03
 #
-DEF ossc_board-rescue_CONN_01X03 P 0 40 Y N 1 F N
+DEF CONN_01X03 P 0 40 Y N 1 F N
 F0 "P" 0 200 50 H V C CNN
-F1 "ossc_board-rescue_CONN_01X03" 100 0 50 V V C CNN
+F1 "CONN_01X03" 100 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -186,11 +186,11 @@ X P3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_CONN_01X08
+# CONN_01X08
 #
-DEF ossc_board-rescue_CONN_01X08 P 0 40 Y N 1 F N
+DEF CONN_01X08 P 0 40 Y N 1 F N
 F0 "P" 0 450 50 H V C CNN
-F1 "ossc_board-rescue_CONN_01X08" 100 0 50 V V C CNN
+F1 "CONN_01X08" 100 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -220,11 +220,11 @@ X P8 8 -200 -350 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_CONN_01X12
+# CONN_01X12
 #
-DEF ossc_board-rescue_CONN_01X12 P 0 40 Y N 1 F N
+DEF CONN_01X12 P 0 40 Y N 1 F N
 F0 "P" 0 650 50 H V C CNN
-F1 "ossc_board-rescue_CONN_01X12" 100 0 50 V V C CNN
+F1 "CONN_01X12" 100 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -262,11 +262,11 @@ X P9 9 -200 -250 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_CONN_02X05
+# CONN_02X05
 #
-DEF ossc_board-rescue_CONN_02X05 P 0 1 Y N 1 F N
+DEF CONN_02X05 P 0 1 Y N 1 F N
 F0 "P" 0 300 50 H V C CNN
-F1 "ossc_board-rescue_CONN_02X05" 0 -300 50 H V C CNN
+F1 "CONN_02X05" 0 -300 50 H V C CNN
 F2 "" 0 -1200 50 H V C CNN
 F3 "" 0 -1200 50 H V C CNN
 $FPLIST
@@ -300,11 +300,11 @@ X P9 9 -250 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_C_Small
+# C_Small
 #
-DEF ossc_board-rescue_C_Small C 0 10 N N 1 F N
+DEF C_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "ossc_board-rescue_C_Small" 10 -80 50 H V L CNN
+F1 "C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -322,11 +322,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_Crystal_Small
+# Crystal_Small
 #
-DEF ossc_board-rescue_Crystal_Small Y 0 40 N N 1 F N
+DEF Crystal_Small Y 0 40 N N 1 F N
 F0 "Y" 0 100 50 H V C CNN
-F1 "ossc_board-rescue_Crystal_Small" 0 -100 50 H V C CNN
+F1 "Crystal_Small" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -341,11 +341,11 @@ X 2 2 100 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_DPDT
+# DPDT
 #
-DEF ossc_board-rescue_DPDT SW 0 0 N Y 1 F N
+DEF DPDT SW 0 0 N Y 1 F N
 F0 "SW" 0 400 50 H V C CNN
-F1 "ossc_board-rescue_DPDT" 0 -350 50 H V C CNN
+F1 "DPDT" 0 -350 50 H V C CNN
 F2 "" 0 200 50 H V C CNN
 F3 "" 0 200 50 H V C CNN
 DRAW
@@ -366,11 +366,11 @@ X 6 6 500 -250 300 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_EP4CE15E22
+# EP4CE15E22
 #
-DEF ossc_board-rescue_EP4CE15E22 U 0 40 Y Y 1 F N
+DEF EP4CE15E22 U 0 40 Y Y 1 F N
 F0 "U" 0 -100 50 H V C CNN
-F1 "ossc_board-rescue_EP4CE15E22" 0 100 50 H V C CNN
+F1 "EP4CE15E22" 0 100 50 H V C CNN
 F2 "MODULE" 0 0 50 H I C CNN
 F3 "DOCUMENTATION" 0 0 50 H I C CNN
 DRAW
@@ -522,11 +522,11 @@ X IO99 99 2550 850 300 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_FILTER
+# FILTER
 #
-DEF ossc_board-rescue_FILTER FB 0 40 Y N 1 F N
+DEF FILTER FB 0 40 Y N 1 F N
 F0 "FB" 0 150 50 H V C CNN
-F1 "ossc_board-rescue_FILTER" 0 -100 50 H V C CNN
+F1 "FILTER" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -541,11 +541,11 @@ X 2 2 350 0 150 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_F_Small
+# F_Small
 #
-DEF ossc_board-rescue_F_Small F 0 10 N N 1 F N
+DEF F_Small F 0 10 N N 1 F N
 F0 "F" -40 60 50 H V L CNN
-F1 "ossc_board-rescue_F_Small" -120 -60 50 H V L CNN
+F1 "F_Small" -120 -60 50 H V L CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -560,11 +560,11 @@ X ~ 2 100 0 50 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_GND
+# GND
 #
-DEF ossc_board-rescue_GND #PWR 0 0 Y Y 1 F P
+DEF GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "ossc_board-rescue_GND" 0 -150 50 H V C CNN
+F1 "GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -573,11 +573,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_GND-RESCUE-ossc_board
+# GND-RESCUE-ossc_board
 #
-DEF ~ossc_board-rescue_GND-RESCUE-ossc_board #PWR 0 0 Y Y 1 F P
+DEF ~GND-RESCUE-ossc_board #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 0 30 H I C CNN
-F1 "ossc_board-rescue_GND-RESCUE-ossc_board" 0 -70 30 H I C CNN
+F1 "GND-RESCUE-ossc_board" 0 -70 30 H I C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -586,11 +586,11 @@ X GND 1 0 0 0 U 30 30 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_HDMI_CONN
+# HDMI_CONN
 #
-DEF ossc_board-rescue_HDMI_CONN U 0 40 Y Y 1 F N
+DEF HDMI_CONN U 0 40 Y Y 1 F N
 F0 "U" 200 -400 50 H V C CNN
-F1 "ossc_board-rescue_HDMI_CONN" 350 0 50 V V C CNN
+F1 "HDMI_CONN" 350 0 50 V V C CNN
 F2 "MODULE" 0 0 50 H I C CNN
 F3 "DOCUMENTATION" 0 0 50 H I C CNN
 DRAW
@@ -617,11 +617,11 @@ X TMDS_D0- 9 -750 100 300 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_IT6613
+# IT6613
 #
-DEF ossc_board-rescue_IT6613 U 0 40 Y Y 1 F N
+DEF IT6613 U 0 40 Y Y 1 F N
 F0 "U" 0 -100 50 H V C CNN
-F1 "ossc_board-rescue_IT6613" 0 100 50 H V C CNN
+F1 "IT6613" 0 100 50 H V C CNN
 F2 "MODULE" 0 0 50 H I C CNN
 F3 "DOCUMENTATION" 0 0 50 H I C CNN
 DRAW
@@ -729,11 +729,11 @@ X IVDD 99 -1100 1700 300 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_LED-RESCUE-ossc_board
+# LED-RESCUE-ossc_board
 #
-DEF ossc_board-rescue_LED-RESCUE-ossc_board D 0 40 Y N 1 F N
+DEF LED-RESCUE-ossc_board D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "ossc_board-rescue_LED-RESCUE-ossc_board" 0 -100 50 H V C CNN
+F1 "LED-RESCUE-ossc_board" 0 -100 50 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -755,11 +755,11 @@ X K 2 200 0 150 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_PCM1862
+# PCM1862
 #
-DEF ossc_board-rescue_PCM1862 U 0 40 Y Y 1 F N
+DEF PCM1862 U 0 40 Y Y 1 F N
 F0 "U" 0 -100 50 H V C CNN
-F1 "ossc_board-rescue_PCM1862" 0 -350 50 H V C CNN
+F1 "PCM1862" 0 -350 50 H V C CNN
 F2 "MODULE" 0 0 50 H I C CNN
 F3 "DOCUMENTATION" 50 0 50 H I C CNN
 DRAW
@@ -797,11 +797,11 @@ X XO 9 -800 -350 300 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_PWR_FLAG
+# PWR_FLAG
 #
-DEF ossc_board-rescue_PWR_FLAG #FLG 0 0 N N 1 F P
+DEF PWR_FLAG #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 95 50 H I C CNN
-F1 "ossc_board-rescue_PWR_FLAG" 0 180 50 H V C CNN
+F1 "PWR_FLAG" 0 180 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -810,11 +810,11 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_R
+# R
 #
-DEF ossc_board-rescue_R R 0 0 N Y 1 F N
+DEF R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "ossc_board-rescue_R" 0 0 50 V V C CNN
+F1 "R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -828,11 +828,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_R-RESCUE-ossc_board
+# R-RESCUE-ossc_board
 #
-DEF ossc_board-rescue_R-RESCUE-ossc_board R 0 0 N Y 1 F N
+DEF R-RESCUE-ossc_board R 0 0 N Y 1 F N
 F0 "R" 80 0 40 V V C CNN
-F1 "ossc_board-rescue_R-RESCUE-ossc_board" 7 1 40 V V C CNN
+F1 "R-RESCUE-ossc_board" 7 1 40 V V C CNN
 F2 "" -70 0 30 V V C CNN
 F3 "" 0 0 30 H V C CNN
 $FPLIST
@@ -849,11 +849,11 @@ X ~ 2 0 -250 100 U 60 60 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_RClamp0524P
+# RClamp0524P
 #
-DEF ossc_board-rescue_RClamp0524P D 0 40 Y Y 1 F N
+DEF RClamp0524P D 0 40 Y Y 1 F N
 F0 "D" 0 -350 60 H V C CNN
-F1 "ossc_board-rescue_RClamp0524P" 0 0 50 V V C CNN
+F1 "RClamp0524P" 0 0 50 V V C CNN
 F2 "" 50 50 60 H I C CNN
 F3 "" 50 50 60 H I C CNN
 DRAW
@@ -871,11 +871,11 @@ X ~ 9 150 100 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_R_Small
+# R_Small
 #
-DEF ossc_board-rescue_R_Small R 0 10 N N 1 F N
+DEF R_Small R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "ossc_board-rescue_R_Small" 30 -40 50 H V L CNN
+F1 "R_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -889,11 +889,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_S25FL216K
+# S25FL216K
 #
-DEF ossc_board-rescue_S25FL216K U 0 40 Y Y 1 F N
+DEF S25FL216K U 0 40 Y Y 1 F N
 F0 "U" 0 250 50 H V C CNN
-F1 "ossc_board-rescue_S25FL216K" 0 150 50 H V C CNN
+F1 "S25FL216K" 0 150 50 H V C CNN
 F2 "MODULE" 0 -100 50 H I C CNN
 F3 "DOCUMENTATION" 0 -200 50 H I C CNN
 DRAW
@@ -909,11 +909,11 @@ X VCC 8 750 150 300 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_SCART-F
+# SCART-F
 #
-DEF ossc_board-rescue_SCART-F P 0 30 Y N 1 F N
+DEF SCART-F P 0 30 Y N 1 F N
 F0 "P" 0 1200 50 H V C CNN
-F1 "ossc_board-rescue_SCART-F" 40 -1200 50 H V C CNN
+F1 "SCART-F" 40 -1200 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -979,11 +979,11 @@ X P9 9 -600 -250 300 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_SN74LVC2G17
+# SN74LVC2G17
 #
-DEF ossc_board-rescue_SN74LVC2G17 U 0 40 Y Y 1 F N
+DEF SN74LVC2G17 U 0 40 Y Y 1 F N
 F0 "U" 0 -100 50 H V C CNN
-F1 "ossc_board-rescue_SN74LVC2G17" 0 100 50 H V C CNN
+F1 "SN74LVC2G17" 0 100 50 H V C CNN
 F2 "MODULE" 0 0 50 H I C CNN
 F3 "DOCUMENTATION" 0 0 50 H I C CNN
 DRAW
@@ -997,11 +997,11 @@ X 1Y 6 850 100 300 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_SPST
+# SPST
 #
-DEF ossc_board-rescue_SPST SW 0 0 N Y 1 F N
+DEF SPST SW 0 0 N Y 1 F N
 F0 "SW" 0 100 50 H V C CNN
-F1 "ossc_board-rescue_SPST" 0 -100 50 H V C CNN
+F1 "SPST" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -1013,11 +1013,11 @@ X 2 2 500 0 300 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_SPX2920M3-3.3
+# SPX2920M3-3.3
 #
-DEF ossc_board-rescue_SPX2920M3-3.3 U 0 30 Y Y 1 F N
+DEF SPX2920M3-3.3 U 0 30 Y Y 1 F N
 F0 "U" 0 250 50 H V C CNN
-F1 "ossc_board-rescue_SPX2920M3-3.3" 0 200 50 H V C CNN
+F1 "SPX2920M3-3.3" 0 200 50 H V C CNN
 F2 "SOT223" 0 100 50 H V C CIN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -1031,11 +1031,11 @@ X VO 3 400 50 150 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_SW_PUSH
+# SW_PUSH
 #
-DEF ossc_board-rescue_SW_PUSH SW 0 40 N N 1 F N
+DEF SW_PUSH SW 0 40 N N 1 F N
 F0 "SW" 150 110 50 H V C CNN
-F1 "ossc_board-rescue_SW_PUSH" 0 -80 50 H V C CNN
+F1 "SW_PUSH" 0 -80 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -1046,11 +1046,11 @@ X 2 2 300 0 200 L 50 50 0 1 P I
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_THS7353
+# THS7353
 #
-DEF ossc_board-rescue_THS7353 U 0 40 Y Y 1 F N
+DEF THS7353 U 0 40 Y Y 1 F N
 F0 "U" 150 -450 60 H V C CNN
-F1 "ossc_board-rescue_THS7353" 150 550 60 H V C CNN
+F1 "THS7353" 150 550 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -1458,11 +1458,11 @@ X NC ~ -600 500 200 R 50 50 20 1 I
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_TLV71209DBV-RESCUE-ossc_board
+# TLV71209DBV-RESCUE-ossc_board
 #
-DEF ossc_board-rescue_TLV71209DBV-RESCUE-ossc_board U 0 40 Y Y 1 F N
+DEF TLV71209DBV-RESCUE-ossc_board U 0 40 Y Y 1 F N
 F0 "U" -250 200 50 H V C CNN
-F1 "ossc_board-rescue_TLV71209DBV-RESCUE-ossc_board" 200 200 50 H V C CNN
+F1 "TLV71209DBV-RESCUE-ossc_board" 200 200 50 H V C CNN
 F2 "SOT-23-5" 0 100 50 H V C CIN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -1477,11 +1477,11 @@ X OUT 5 450 50 150 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_TVP7002
+# TVP7002
 #
-DEF ossc_board-rescue_TVP7002 U 0 40 Y Y 1 F N
+DEF TVP7002 U 0 40 Y Y 1 F N
 F0 "U" 0 -100 50 H V C CNN
-F1 "ossc_board-rescue_TVP7002" 0 100 50 H V C CNN
+F1 "TVP7002" 0 100 50 H V C CNN
 F2 "MODULE" 0 0 50 H I C CNN
 F3 "DOCUMENTATION" 0 0 50 H I C CNN
 DRAW
@@ -1589,11 +1589,11 @@ X SOGIN_2 99 -1050 1700 300 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_VGA
+# VGA
 #
-DEF ossc_board-rescue_VGA J 0 0 Y N 1 F N
+DEF VGA J 0 0 Y N 1 F N
 F0 "J" -250 800 60 H V C CNN
-F1 "ossc_board-rescue_VGA" 0 -750 60 H V C CNN
+F1 "VGA" 0 -750 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -1646,11 +1646,11 @@ X KEY/PWR 9 -600 150 300 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ossc_board-rescue_ZENER
+# ZENER
 #
-DEF ossc_board-rescue_ZENER D 0 40 N N 1 F N
+DEF ZENER D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "ossc_board-rescue_ZENER" 0 -100 50 H V C CNN
+F1 "ZENER" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
