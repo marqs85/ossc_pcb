@@ -1,36 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:custom_components
+EESchema Schematic File Version 4
 LIBS:ossc_board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -45,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L TVP7002 U1
+L ossc_board-rescue:TVP7002 U1
 U 1 1 53F36E1F
 P 5750 3800
 F 0 "U1" H 5750 3700 50  0000 C CNN
@@ -56,7 +26,7 @@ F 3 "DOCUMENTATION" H 5750 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SCART-F J3
+L ossc_board-rescue:SCART-F J3
 U 1 1 53F623BC
 P 1500 3550
 F 0 "J3" H 1500 4750 60  0000 C CNN
@@ -67,7 +37,7 @@ F 3 "" H 1500 3550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VGA J1
+L ossc_board-rescue:VGA J1
 U 1 1 53F623CB
 P 1500 1400
 F 0 "J1" H 1250 2200 60  0000 C CNN
@@ -78,9 +48,11 @@ F 3 "~" H 1500 1400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 3xRCA_CONN J2
+L ossc_board-rescue:3xRCA_CONN J2
 U 1 1 53F6592E
 P 1600 5400
+AR Path="/53F6592E" Ref="J2"  Part="1" 
+AR Path="/54FDD796/53F6592E" Ref="J2"  Part="1" 
 F 0 "J2" H 1600 5300 50  0000 C CNN
 F 1 "3XRCA_CONN" H 1600 5500 50  0000 C CNN
 F 2 "custom_components:3xRCA_CONN" H 1600 5400 50  0001 C CNN
@@ -89,7 +61,7 @@ F 3 "DOCUMENTATION" H 1600 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BARREL_JACK J5
+L ossc_board-rescue:BARREL_JACK J5
 U 1 1 53FA4ED2
 P 7300 6200
 F 0 "J5" H 7300 6450 60  0000 C CNN
@@ -100,7 +72,7 @@ F 3 "" H 7300 6200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TLV71209DBV-RESCUE-ossc_board U9
+L ossc_board-rescue:TLV71209DBV-RESCUE-ossc_board U9
 U 1 1 53FA4F27
 P 10300 6600
 AR Path="/53FA4F27" Ref="U9"  Part="1" 
@@ -113,7 +85,7 @@ F 3 "" H 10300 6600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C32
+L ossc_board-rescue:C-RESCUE-ossc_board C32
 U 1 1 53FA5100
 P 9700 6050
 F 0 "C32" H 9700 6150 40  0000 L CNN
@@ -124,7 +96,7 @@ F 3 "~" H 9700 6050 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C35
+L ossc_board-rescue:C-RESCUE-ossc_board C35
 U 1 1 53FA5122
 P 10850 6050
 F 0 "C35" H 10850 6150 40  0000 L CNN
@@ -135,7 +107,7 @@ F 3 "~" H 10850 6050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C37
+L ossc_board-rescue:C-RESCUE-ossc_board C37
 U 1 1 53FA5138
 P 10850 6750
 F 0 "C37" H 10850 6850 40  0000 L CNN
@@ -146,7 +118,7 @@ F 3 "~" H 10850 6750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C34
+L ossc_board-rescue:C-RESCUE-ossc_board C34
 U 1 1 53FA51A4
 P 9700 6750
 F 0 "C34" H 9700 6850 40  0000 L CNN
@@ -157,7 +129,7 @@ F 3 "~" H 9700 6750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR079
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR079
 U 1 1 53FA5230
 P 10850 6300
 F 0 "#PWR079" H 10850 6300 30  0001 C CNN
@@ -168,7 +140,7 @@ F 3 "" H 10850 6300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR080
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR080
 U 1 1 53FA5263
 P 10850 7000
 F 0 "#PWR080" H 10850 7000 30  0001 C CNN
@@ -179,7 +151,7 @@ F 3 "" H 10850 7000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR081
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR081
 U 1 1 53FCE5E0
 P 7800 6350
 F 0 "#PWR081" H 7800 6350 30  0001 C CNN
@@ -250,7 +222,7 @@ RGB2_B
 Text Label 550  5450 0    60   ~ 0
 RGB2_R
 $Comp
-L C C6
+L ossc_board-rescue:C C6
 U 1 1 53FCF0E7
 P 1400 6800
 F 0 "C6" H 1400 6900 40  0000 L CNN
@@ -261,7 +233,7 @@ F 3 "~" H 1400 6800 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C3
+L ossc_board-rescue:C C3
 U 1 1 53FCF119
 P 1400 6500
 F 0 "C3" H 1400 6600 40  0000 L CNN
@@ -272,7 +244,7 @@ F 3 "~" H 1400 6500 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C1
+L ossc_board-rescue:C C1
 U 1 1 53FCF11F
 P 3050 3400
 F 0 "C1" H 3050 3500 40  0000 L CNN
@@ -283,7 +255,7 @@ F 3 "~" H 3050 3400 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R7
+L ossc_board-rescue:R R7
 U 1 1 53FCF145
 P 1250 6950
 F 0 "R7" V 1330 6950 40  0000 C CNN
@@ -294,7 +266,7 @@ F 3 "~" H 1250 6950 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L ossc_board-rescue:R R4
 U 1 1 53FCF15E
 P 1250 6350
 F 0 "R4" V 1330 6350 40  0000 C CNN
@@ -305,7 +277,7 @@ F 3 "~" H 1250 6350 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R1
+L ossc_board-rescue:R R1
 U 1 1 53FCF164
 P 2500 3550
 F 0 "R1" V 2580 3550 40  0000 C CNN
@@ -322,7 +294,7 @@ RGB2_R
 Text Label 2550 3400 0    60   ~ 0
 RGB3_R
 $Comp
-L GND-RESCUE-ossc_board #PWR082
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR082
 U 1 1 53FCF36C
 P 1250 7100
 F 0 "#PWR082" H 1250 7100 30  0001 C CNN
@@ -333,7 +305,7 @@ F 3 "" H 1250 7100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR083
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR083
 U 1 1 53FCF372
 P 1350 6250
 F 0 "#PWR083" H 1350 6250 30  0001 C CNN
@@ -344,7 +316,7 @@ F 3 "" H 1350 6250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR084
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR084
 U 1 1 53FCF378
 P 2500 3700
 F 0 "#PWR084" H 2500 3700 30  0001 C CNN
@@ -355,7 +327,7 @@ F 3 "" H 2500 3700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C7
+L ossc_board-rescue:C C7
 U 1 1 53FCF471
 P 1800 6900
 F 0 "C7" H 1800 7000 40  0000 L CNN
@@ -366,7 +338,7 @@ F 3 "~" H 1800 6900 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C4
+L ossc_board-rescue:C C4
 U 1 1 53FCF477
 P 1800 6600
 F 0 "C4" H 1800 6700 40  0000 L CNN
@@ -377,7 +349,7 @@ F 3 "~" H 1800 6600 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C2
+L ossc_board-rescue:C C2
 U 1 1 53FCF47D
 P 3050 4100
 F 0 "C2" H 3050 4200 40  0000 L CNN
@@ -388,7 +360,7 @@ F 3 "~" H 3050 4100 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R8
+L ossc_board-rescue:R R8
 U 1 1 53FCF483
 P 1650 7050
 F 0 "R8" V 1730 7050 40  0000 C CNN
@@ -399,7 +371,7 @@ F 3 "~" H 1650 7050 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L ossc_board-rescue:R R5
 U 1 1 53FCF489
 P 850 6450
 F 0 "R5" V 930 6450 40  0000 C CNN
@@ -410,7 +382,7 @@ F 3 "~" H 850 6450 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R2
+L ossc_board-rescue:R R2
 U 1 1 53FCF48F
 P 2500 4250
 F 0 "R2" V 2580 4250 40  0000 C CNN
@@ -425,7 +397,7 @@ RGB1_B
 Text Label 700  6550 1    60   ~ 0
 RGB2_B
 $Comp
-L GND-RESCUE-ossc_board #PWR085
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR085
 U 1 1 53FCF49B
 P 1650 7200
 F 0 "#PWR085" H 1650 7200 30  0001 C CNN
@@ -436,7 +408,7 @@ F 3 "" H 1650 7200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR086
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR086
 U 1 1 53FCF4A1
 P 950 6350
 F 0 "#PWR086" H 950 6350 30  0001 C CNN
@@ -447,7 +419,7 @@ F 3 "" H 950 6350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR087
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR087
 U 1 1 53FCF4A7
 P 2500 4400
 F 0 "#PWR087" H 2500 4400 30  0001 C CNN
@@ -460,7 +432,7 @@ $EndComp
 Text Label 2550 4100 0    60   ~ 0
 RGB3_B
 $Comp
-L C C10
+L ossc_board-rescue:C C10
 U 1 1 53FCF73F
 P 3350 3850
 F 0 "C10" H 3350 3950 40  0000 L CNN
@@ -471,7 +443,7 @@ F 3 "~" H 3350 3850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR088
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR088
 U 1 1 53FCF8C9
 P 3350 4000
 F 0 "#PWR088" H 3350 4000 30  0001 C CNN
@@ -484,7 +456,7 @@ $EndComp
 Text Label 3250 4000 1    60   ~ 0
 A33VDD
 $Comp
-L C C11
+L ossc_board-rescue:C C11
 U 1 1 53FCF936
 P 3550 2600
 F 0 "C11" H 3550 2700 40  0000 L CNN
@@ -495,7 +467,7 @@ F 3 "~" H 3550 2600 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C5
+L ossc_board-rescue:C C5
 U 1 1 53FCFA23
 P 1000 6700
 F 0 "C5" H 1000 6800 40  0000 L CNN
@@ -506,7 +478,7 @@ F 3 "~" H 1000 6700 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R6
+L ossc_board-rescue:R R6
 U 1 1 53FCFA29
 P 850 6850
 F 0 "R6" V 930 6850 40  0000 C CNN
@@ -519,7 +491,7 @@ $EndComp
 Text Label 700  7050 1    60   ~ 0
 RGB1_G
 $Comp
-L GND-RESCUE-ossc_board #PWR089
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR089
 U 1 1 53FCFA33
 P 850 7000
 F 0 "#PWR089" H 850 7000 30  0001 C CNN
@@ -530,7 +502,7 @@ F 3 "" H 850 7000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C8
+L ossc_board-rescue:C C8
 U 1 1 53FCFB11
 P 3350 3150
 F 0 "C8" H 3350 3250 40  0000 L CNN
@@ -541,7 +513,7 @@ F 3 "~" H 3350 3150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR090
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR090
 U 1 1 53FCFB17
 P 3350 3300
 F 0 "#PWR090" H 3350 3300 30  0001 C CNN
@@ -554,7 +526,7 @@ $EndComp
 Text Label 3500 3900 0    60   ~ 0
 A33VDD
 $Comp
-L C C12
+L ossc_board-rescue:C C12
 U 1 1 53FD0575
 P 1800 6400
 F 0 "C12" H 1800 6500 40  0000 L CNN
@@ -565,7 +537,7 @@ F 3 "~" H 1800 6400 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R9
+L ossc_board-rescue:R R9
 U 1 1 53FD057B
 P 1650 6250
 F 0 "R9" V 1730 6250 40  0000 C CNN
@@ -578,7 +550,7 @@ $EndComp
 Text Label 1500 6000 3    60   ~ 0
 RGB2_G
 $Comp
-L GND-RESCUE-ossc_board #PWR091
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR091
 U 1 1 53FD0582
 P 1750 6150
 F 0 "#PWR091" H 1750 6150 30  0001 C CNN
@@ -589,7 +561,7 @@ F 3 "" H 1750 6150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C13
+L ossc_board-rescue:C-RESCUE-ossc_board C13
 U 1 1 53FD059D
 P 4700 1900
 F 0 "C13" H 4700 2000 40  0000 L CNN
@@ -600,7 +572,7 @@ F 3 "~" H 4700 1900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C15
+L ossc_board-rescue:C C15
 U 1 1 53FD0686
 P 4800 1250
 F 0 "C15" H 4800 1350 40  0000 L CNN
@@ -611,7 +583,7 @@ F 3 "~" H 4800 1250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R10
+L ossc_board-rescue:R R10
 U 1 1 53FD06FE
 P 4650 1100
 F 0 "R10" V 4730 1100 40  0000 C CNN
@@ -622,7 +594,7 @@ F 3 "~" H 4650 1100 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR092
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR092
 U 1 1 53FD0704
 P 4500 1100
 F 0 "#PWR092" H 4500 1100 30  0001 C CNN
@@ -635,7 +607,7 @@ $EndComp
 Text Label 4800 1050 1    60   ~ 0
 RGB3_G
 $Comp
-L C-RESCUE-ossc_board C16
+L ossc_board-rescue:C-RESCUE-ossc_board C16
 U 1 1 53FD077E
 P 4900 1900
 F 0 "C16" H 4900 2000 40  0000 L CNN
@@ -646,7 +618,7 @@ F 3 "~" H 4900 1900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C17
+L ossc_board-rescue:C-RESCUE-ossc_board C17
 U 1 1 53FD09D4
 P 5000 1600
 F 0 "C17" H 5000 1700 40  0000 L CNN
@@ -657,7 +629,7 @@ F 3 "~" H 5000 1600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C9
+L ossc_board-rescue:C C9
 U 1 1 53FD0DD7
 P 3250 4550
 F 0 "C9" H 3250 4650 40  0000 L CNN
@@ -668,7 +640,7 @@ F 3 "~" H 3250 4550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR093
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR093
 U 1 1 53FD0E55
 P 3250 4700
 F 0 "#PWR093" H 3250 4700 30  0001 C CNN
@@ -679,7 +651,7 @@ F 3 "" H 3250 4700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C18
+L ossc_board-rescue:C-RESCUE-ossc_board C18
 U 1 1 53FD114E
 P 5300 1750
 F 0 "C18" H 5300 1850 40  0000 L CNN
@@ -690,7 +662,7 @@ F 3 "~" H 5300 1750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR094
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR094
 U 1 1 53FD115A
 P 3700 4500
 F 0 "#PWR094" H 3700 4500 30  0001 C CNN
@@ -701,7 +673,7 @@ F 3 "" H 3700 4500 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR095
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR095
 U 1 1 53FD1160
 P 3700 4600
 F 0 "#PWR095" H 3700 4600 30  0001 C CNN
@@ -714,7 +686,7 @@ $EndComp
 Text Label 3500 3800 0    60   ~ 0
 A33VDD
 $Comp
-L GND-RESCUE-ossc_board #PWR096
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR096
 U 1 1 53FD11E1
 P 3700 3300
 F 0 "#PWR096" H 3700 3300 30  0001 C CNN
@@ -725,7 +697,7 @@ F 3 "" H 3700 3300 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR097
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR097
 U 1 1 53FD11E7
 P 3700 3000
 F 0 "#PWR097" H 3700 3000 30  0001 C CNN
@@ -736,7 +708,7 @@ F 3 "" H 3700 3000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR098
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR098
 U 1 1 53FD11ED
 P 3700 2800
 F 0 "#PWR098" H 3700 2800 30  0001 C CNN
@@ -747,7 +719,7 @@ F 3 "" H 3700 2800 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR099
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR099
 U 1 1 53FD126A
 P 3700 3700
 F 0 "#PWR099" H 3700 3700 30  0001 C CNN
@@ -758,7 +730,7 @@ F 3 "" H 3700 3700 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0100
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0100
 U 1 1 53FD1270
 P 3700 4000
 F 0 "#PWR0100" H 3700 4000 30  0001 C CNN
@@ -769,7 +741,7 @@ F 3 "" H 3700 4000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0101
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0101
 U 1 1 53FD1372
 P 5100 2100
 F 0 "#PWR0101" H 5100 2100 30  0001 C CNN
@@ -780,7 +752,7 @@ F 3 "" H 5100 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0102
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0102
 U 1 1 53FD1378
 P 5400 2100
 F 0 "#PWR0102" H 5400 2100 30  0001 C CNN
@@ -791,7 +763,7 @@ F 3 "" H 5400 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0103
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0103
 U 1 1 53FD137E
 P 5500 2100
 F 0 "#PWR0103" H 5500 2100 30  0001 C CNN
@@ -802,7 +774,7 @@ F 3 "" H 5500 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0104
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0104
 U 1 1 53FD1384
 P 5600 2100
 F 0 "#PWR0104" H 5600 2100 30  0001 C CNN
@@ -813,7 +785,7 @@ F 3 "" H 5600 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0105
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0105
 U 1 1 53FD138A
 P 6000 2100
 F 0 "#PWR0105" H 6000 2100 30  0001 C CNN
@@ -824,7 +796,7 @@ F 3 "" H 6000 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0106
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0106
 U 1 1 53FD1390
 P 6300 2100
 F 0 "#PWR0106" H 6300 2100 30  0001 C CNN
@@ -835,7 +807,7 @@ F 3 "" H 6300 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C23
+L ossc_board-rescue:C-RESCUE-ossc_board C23
 U 1 1 53FD13A2
 P 6300 1750
 F 0 "C23" H 6300 1850 40  0000 L CNN
@@ -846,7 +818,7 @@ F 3 "~" H 6300 1750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0107
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0107
 U 1 1 53FD13AE
 P 7800 3300
 F 0 "#PWR0107" H 7800 3300 30  0001 C CNN
@@ -857,7 +829,7 @@ F 3 "" H 7800 3300 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0108
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0108
 U 1 1 53FD13B4
 P 7800 3400
 F 0 "#PWR0108" H 7800 3400 30  0001 C CNN
@@ -868,7 +840,7 @@ F 3 "" H 7800 3400 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C27
+L ossc_board-rescue:C-RESCUE-ossc_board C27
 U 1 1 53FD13C0
 P 8300 3200
 F 0 "C27" H 8300 3300 40  0000 L CNN
@@ -879,7 +851,7 @@ F 3 "~" H 8300 3200 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C28
+L ossc_board-rescue:C-RESCUE-ossc_board C28
 U 1 1 53FD13C6
 P 8300 3500
 F 0 "C28" H 8300 3600 40  0000 L CNN
@@ -890,7 +862,7 @@ F 3 "~" H 8300 3500 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0109
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0109
 U 1 1 53FD13CC
 P 7800 4100
 F 0 "#PWR0109" H 7800 4100 30  0001 C CNN
@@ -901,7 +873,7 @@ F 3 "" H 7800 4100 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0110
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0110
 U 1 1 53FD13D2
 P 7800 4700
 F 0 "#PWR0110" H 7800 4700 30  0001 C CNN
@@ -912,7 +884,7 @@ F 3 "" H 7800 4700 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C26
+L ossc_board-rescue:C-RESCUE-ossc_board C26
 U 1 1 53FD13D8
 P 8250 5000
 F 0 "C26" H 8250 5100 40  0000 L CNN
@@ -923,7 +895,7 @@ F 3 "~" H 8250 5000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0111
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0111
 U 1 1 53FD13DE
 P 4700 5500
 F 0 "#PWR0111" H 4700 5500 30  0001 C CNN
@@ -934,7 +906,7 @@ F 3 "" H 4700 5500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0112
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0112
 U 1 1 53FD13E4
 P 6000 5500
 F 0 "#PWR0112" H 6000 5500 30  0001 C CNN
@@ -945,7 +917,7 @@ F 3 "" H 6000 5500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0113
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0113
 U 1 1 53FD13EA
 P 6200 5500
 F 0 "#PWR0113" H 6200 5500 30  0001 C CNN
@@ -956,7 +928,7 @@ F 3 "" H 6200 5500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C14
+L ossc_board-rescue:C-RESCUE-ossc_board C14
 U 1 1 53FD13F0
 P 4600 6100
 F 0 "C14" H 4600 6200 40  0000 L CNN
@@ -967,7 +939,7 @@ F 3 "~" H 4600 6100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C21
+L ossc_board-rescue:C-RESCUE-ossc_board C21
 U 1 1 53FD13F6
 P 5900 6100
 F 0 "C21" H 5900 6200 40  0000 L CNN
@@ -978,7 +950,7 @@ F 3 "~" H 5900 6100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C22
+L ossc_board-rescue:C-RESCUE-ossc_board C22
 U 1 1 53FD13FC
 P 6100 6100
 F 0 "C22" H 6100 6200 40  0000 L CNN
@@ -992,7 +964,7 @@ NoConn ~ 3700 5000
 Text Label 5300 1950 0    60   ~ 0
 A33VDD
 $Comp
-L GND-RESCUE-ossc_board #PWR0114
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0114
 U 1 1 53FD1868
 P 5300 1550
 F 0 "#PWR0114" H 5300 1550 30  0001 C CNN
@@ -1003,7 +975,7 @@ F 3 "" H 5300 1550 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R-RESCUE-ossc_board R11
+L ossc_board-rescue:R-RESCUE-ossc_board R11
 U 1 1 53FD186E
 P 5900 1850
 F 0 "R11" V 5980 1850 40  0000 C CNN
@@ -1014,7 +986,7 @@ F 3 "~" H 5900 1850 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C20
+L ossc_board-rescue:C-RESCUE-ossc_board C20
 U 1 1 53FD1879
 P 5900 1200
 F 0 "C20" H 5900 1300 40  0000 L CNN
@@ -1025,7 +997,7 @@ F 3 "~" H 5900 1200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C19
+L ossc_board-rescue:C-RESCUE-ossc_board C19
 U 1 1 53FD188F
 P 5800 1550
 F 0 "C19" H 5800 1650 40  0000 L CNN
@@ -1036,7 +1008,7 @@ F 3 "~" H 5800 1550 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0115
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0115
 U 1 1 53FD1B87
 P 6300 1950
 F 0 "#PWR0115" H 6300 1950 30  0001 C CNN
@@ -1047,7 +1019,7 @@ F 3 "" H 6300 1950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0116
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0116
 U 1 1 53FD1FCD
 P 7050 950
 F 0 "#PWR0116" H 7050 950 30  0001 C CNN
@@ -1068,7 +1040,7 @@ RGB3_HS_B
 Text Label 8850 1150 3    60   ~ 0
 RGB3_VS_B
 $Comp
-L R-RESCUE-ossc_board R12
+L ossc_board-rescue:R-RESCUE-ossc_board R12
 U 1 1 53FD236B
 P 6700 1050
 F 0 "R12" V 6780 1050 40  0000 C CNN
@@ -1079,7 +1051,7 @@ F 3 "~" H 6700 1050 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C24
+L ossc_board-rescue:C-RESCUE-ossc_board C24
 U 1 1 53FD249A
 P 6950 1250
 F 0 "C24" H 6950 1350 40  0000 L CNN
@@ -1090,7 +1062,7 @@ F 3 "~" H 6950 1250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0117
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0117
 U 1 1 53FD24A0
 P 6950 1450
 F 0 "#PWR0117" H 6950 1450 30  0001 C CNN
@@ -1105,7 +1077,7 @@ RGB3_HS_B
 Text Label 6800 2000 1    60   ~ 0
 RGB3_VS_B
 $Comp
-L GND-RESCUE-ossc_board #PWR0118
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0118
 U 1 1 53FD27D5
 P 6900 2100
 F 0 "#PWR0118" H 6900 2100 30  0001 C CNN
@@ -1116,7 +1088,7 @@ F 3 "" H 6900 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0119
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0119
 U 1 1 53FD27DB
 P 7000 2100
 F 0 "#PWR0119" H 7000 2100 30  0001 C CNN
@@ -1127,7 +1099,7 @@ F 3 "" H 7000 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0120
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0120
 U 1 1 53FD27E1
 P 7800 2800
 F 0 "#PWR0120" H 7800 2800 30  0001 C CNN
@@ -1138,7 +1110,7 @@ F 3 "" H 7800 2800 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0121
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0121
 U 1 1 53FD27E7
 P 7800 2900
 F 0 "#PWR0121" H 7800 2900 30  0001 C CNN
@@ -1149,7 +1121,7 @@ F 3 "" H 7800 2900 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0122
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0122
 U 1 1 53FD27ED
 P 7800 3100
 F 0 "#PWR0122" H 7800 3100 30  0001 C CNN
@@ -1162,7 +1134,7 @@ $EndComp
 Text Label 6600 2050 1    60   ~ 0
 CLK27
 $Comp
-L ACHL-27MHZ-EK Y1
+L ossc_board-rescue:ACHL-27MHZ-EK Y1
 U 1 1 53FD28BE
 P 6100 7000
 AR Path="/53FD28BE" Ref="Y1"  Part="1" 
@@ -1176,7 +1148,7 @@ F 3 "DOCUMENTATION" H 6100 7000 50  0001 C CNN
 $EndComp
 NoConn ~ 5150 6950
 $Comp
-L GND-RESCUE-ossc_board #PWR0123
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0123
 U 1 1 53FD28CB
 P 5150 7050
 F 0 "#PWR0123" H 5150 7050 30  0001 C CNN
@@ -1191,7 +1163,7 @@ IOVDD
 Text Label 7100 7050 0    60   ~ 0
 CLK27
 $Comp
-L C-RESCUE-ossc_board C25
+L ossc_board-rescue:C-RESCUE-ossc_board C25
 U 1 1 53FD29E7
 P 7350 6750
 F 0 "C25" H 7350 6850 40  0000 L CNN
@@ -1202,7 +1174,7 @@ F 3 "~" H 7350 6750 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0124
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0124
 U 1 1 53FD29ED
 P 7350 6550
 F 0 "#PWR0124" H 7350 6550 30  0001 C CNN
@@ -1213,7 +1185,7 @@ F 3 "" H 7350 6550 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R-RESCUE-ossc_board R14
+L ossc_board-rescue:R-RESCUE-ossc_board R14
 U 1 1 53FD2BA0
 P 8350 2700
 F 0 "R14" V 8430 2700 40  0000 C CNN
@@ -1224,7 +1196,7 @@ F 3 "~" H 8350 2700 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R-RESCUE-ossc_board R13
+L ossc_board-rescue:R-RESCUE-ossc_board R13
 U 1 1 53FD2BB8
 P 8350 2600
 F 0 "R13" V 8430 2600 40  0000 C CNN
@@ -1247,7 +1219,7 @@ DVDD
 Text Label 7850 3500 0    60   ~ 0
 IOVDD
 $Comp
-L GND-RESCUE-ossc_board #PWR0125
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0125
 U 1 1 53FD2F2B
 P 8500 3200
 F 0 "#PWR0125" H 8500 3200 30  0001 C CNN
@@ -1258,7 +1230,7 @@ F 3 "" H 8500 3200 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0126
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0126
 U 1 1 53FD2F31
 P 8500 3500
 F 0 "#PWR0126" H 8500 3500 30  0001 C CNN
@@ -1269,7 +1241,7 @@ F 3 "" H 8500 3500 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R-RESCUE-ossc_board R15
+L ossc_board-rescue:R-RESCUE-ossc_board R15
 U 1 1 53FD2FC9
 P 8450 3000
 F 0 "R15" V 8530 3000 40  0000 C CNN
@@ -1282,7 +1254,7 @@ $EndComp
 Text Label 7900 3000 0    60   ~ 0
 RESET_N
 $Comp
-L GND-RESCUE-ossc_board #PWR0127
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0127
 U 1 1 53FD3657
 P 8250 5200
 F 0 "#PWR0127" H 8250 5200 30  0001 C CNN
@@ -1317,7 +1289,7 @@ G_1
 Text Label 6800 5550 3    60   ~ 0
 G_2
 $Comp
-L GND-RESCUE-ossc_board #PWR0128
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0128
 U 1 1 53FD38D0
 P 4600 6300
 F 0 "#PWR0128" H 4600 6300 30  0001 C CNN
@@ -1336,7 +1308,7 @@ DVDD
 Text Label 6100 5850 1    60   ~ 0
 IOVDD
 $Comp
-L GND-RESCUE-ossc_board #PWR0129
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0129
 U 1 1 53FD3EBF
 P 5900 6300
 F 0 "#PWR0129" H 5900 6300 30  0001 C CNN
@@ -1347,7 +1319,7 @@ F 3 "" H 5900 6300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0130
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0130
 U 1 1 53FD3EC5
 P 6100 6300
 F 0 "#PWR0130" H 6100 6300 30  0001 C CNN
@@ -1454,7 +1426,7 @@ RESET_N
 Text Label 2200 2650 1    60   ~ 0
 RGB1_S
 $Comp
-L PWR_FLAG #FLG0131
+L ossc_board-rescue:PWR_FLAG #FLG0131
 U 1 1 54049F52
 P 9350 5600
 F 0 "#FLG0131" H 9350 5695 30  0001 C CNN
@@ -1465,7 +1437,7 @@ F 3 "" H 9350 5600 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PWR_FLAG #FLG0132
+L ossc_board-rescue:PWR_FLAG #FLG0132
 U 1 1 54049F70
 P 7650 6300
 F 0 "#FLG0132" H 7650 6395 30  0001 C CNN
@@ -1558,7 +1530,7 @@ max. 200mA
 Text Notes 5850 6700 0    60   ~ 0
 max. 20mA
 $Comp
-L TLV71209DBV-RESCUE-ossc_board U6
+L ossc_board-rescue:TLV71209DBV-RESCUE-ossc_board U6
 U 1 1 5509C1FA
 P 10250 4600
 AR Path="/5509C1FA" Ref="U6"  Part="1" 
@@ -1571,7 +1543,7 @@ F 3 "" H 10250 4600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C95
+L ossc_board-rescue:C-RESCUE-ossc_board C95
 U 1 1 5509C200
 P 10800 4750
 F 0 "C95" H 10800 4850 40  0000 L CNN
@@ -1582,7 +1554,7 @@ F 3 "~" H 10800 4750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C38
+L ossc_board-rescue:C-RESCUE-ossc_board C38
 U 1 1 5509C206
 P 9650 4750
 F 0 "C38" H 9650 4850 40  0000 L CNN
@@ -1593,7 +1565,7 @@ F 3 "~" H 9650 4750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0133
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0133
 U 1 1 5509C20C
 P 10800 5000
 F 0 "#PWR0133" H 10800 5000 30  0001 C CNN
@@ -1606,7 +1578,7 @@ $EndComp
 Text Notes 9350 4450 0    60   ~ 0
 max. 200mA
 $Comp
-L C-RESCUE-ossc_board C93
+L ossc_board-rescue:C-RESCUE-ossc_board C93
 U 1 1 5509C3DE
 P 10800 4100
 F 0 "C93" H 10800 4200 40  0000 L CNN
@@ -1617,7 +1589,7 @@ F 3 "~" H 10800 4100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C31
+L ossc_board-rescue:C-RESCUE-ossc_board C31
 U 1 1 5509C3E4
 P 9650 4100
 F 0 "C31" H 9650 4200 40  0000 L CNN
@@ -1628,7 +1600,7 @@ F 3 "~" H 9650 4100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0134
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0134
 U 1 1 5509C3EA
 P 10800 4350
 F 0 "#PWR0134" H 10800 4350 30  0001 C CNN
@@ -1641,7 +1613,7 @@ $EndComp
 Text Notes 9450 3750 0    60   ~ 0
 max. 1000mA
 $Comp
-L FILTER FB5
+L ossc_board-rescue:FILTER FB5
 U 1 1 550D9783
 P 7800 6950
 F 0 "FB5" H 7800 7100 60  0000 C CNN
@@ -1652,7 +1624,7 @@ F 3 "~" H 7800 6950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG0135
+L ossc_board-rescue:PWR_FLAG #FLG0135
 U 1 1 550D9C8E
 P 7100 6950
 F 0 "#FLG0135" H 7100 7045 30  0001 C CNN
@@ -1663,7 +1635,7 @@ F 3 "" H 7100 6950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TLV71209DBV-RESCUE-ossc_board U7
+L ossc_board-rescue:TLV71209DBV-RESCUE-ossc_board U7
 U 1 1 5511AE30
 P 10300 5900
 AR Path="/5511AE30" Ref="U7"  Part="1" 
@@ -1676,7 +1648,7 @@ F 3 "" H 10300 5900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SPST SW1
+L ossc_board-rescue:SPST SW1
 U 1 1 5511FBCB
 P 8850 6100
 F 0 "SW1" H 8850 6200 70  0000 C CNN
@@ -1691,7 +1663,7 @@ CLK27
 Text Label 9450 3200 0    60   ~ 0
 CLK27
 $Comp
-L SN74LVC2G17 U4
+L ossc_board-rescue:SN74LVC2G17 U4
 U 1 1 55BADF88
 P 7900 950
 F 0 "U4" H 7900 850 50  0000 C CNN
@@ -1704,7 +1676,7 @@ $EndComp
 Text Label 9350 5500 1    60   ~ 0
 5VDC
 $Comp
-L R R3
+L ossc_board-rescue:R R3
 U 1 1 55C155CD
 P 4250 1750
 F 0 "R3" V 4330 1750 40  0000 C CNN
@@ -1715,7 +1687,7 @@ F 3 "~" H 4250 1750 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0136
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0136
 U 1 1 55C15C25
 P 4250 1900
 F 0 "#PWR0136" H 4250 1900 30  0001 C CNN
@@ -1728,7 +1700,7 @@ $EndComp
 Text Label 4250 1450 0    60   ~ 0
 RGB1_S
 $Comp
-L THS7353 U17
+L ossc_board-rescue:THS7353 U17
 U 1 1 55E8CA7B
 P 2550 6800
 F 0 "U17" H 2700 6350 60  0000 C CNN
@@ -1739,7 +1711,7 @@ F 3 "" H 2550 6800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0137
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0137
 U 1 1 55E94452
 P 6400 2100
 F 0 "#PWR0137" H 6400 2100 30  0001 C CNN
@@ -1750,7 +1722,7 @@ F 3 "" H 6400 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0138
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0138
 U 1 1 55E94A76
 P 6700 2100
 F 0 "#PWR0138" H 6700 2100 30  0001 C CNN
@@ -1761,7 +1733,7 @@ F 3 "" H 6700 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C70
+L ossc_board-rescue:C-RESCUE-ossc_board C70
 U 1 1 55E8D66C
 P 3600 7400
 F 0 "C70" H 3600 7500 40  0000 L CNN
@@ -1772,7 +1744,7 @@ F 3 "~" H 3600 7400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C71
+L ossc_board-rescue:C-RESCUE-ossc_board C71
 U 1 1 55E8D79E
 P 3800 7400
 F 0 "C71" H 3800 7500 40  0000 L CNN
@@ -1783,7 +1755,7 @@ F 3 "~" H 3800 7400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C72
+L ossc_board-rescue:C-RESCUE-ossc_board C72
 U 1 1 55ECAA32
 P 9100 1150
 F 0 "C72" H 9100 1250 40  0000 L CNN
@@ -1794,7 +1766,7 @@ F 3 "~" H 9100 1150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0139
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0139
 U 1 1 55ECB22A
 P 9100 1350
 F 0 "#PWR0139" H 9100 1350 30  0001 C CNN
@@ -1805,7 +1777,7 @@ F 3 "" H 9100 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ZENER D5
+L ossc_board-rescue:ZENER D5
 U 1 1 55ECCC3D
 P 8100 6300
 F 0 "D5" H 8100 6400 50  0000 C CNN
@@ -1816,7 +1788,7 @@ F 3 "" H 8100 6300 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L F_Small F1
+L ossc_board-rescue:F_Small F1
 U 1 1 55ECFDAC
 P 7700 6100
 F 0 "F1" H 7660 6160 50  0000 L CNN
@@ -1827,7 +1799,7 @@ F 3 "" H 7700 6100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0140
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0140
 U 1 1 55ED037E
 P 8100 6500
 F 0 "#PWR0140" H 8100 6500 30  0001 C CNN
@@ -1840,7 +1812,7 @@ $EndComp
 Text Label 2650 2600 0    60   ~ 0
 RGB_12_G
 $Comp
-L GND-RESCUE-ossc_board #PWR0141
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0141
 U 1 1 55EBC562
 P 1950 7000
 F 0 "#PWR0141" H 1950 7000 30  0001 C CNN
@@ -1851,7 +1823,7 @@ F 3 "" H 1950 7000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0142
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0142
 U 1 1 55EBC773
 P 1950 7100
 F 0 "#PWR0142" H 1950 7100 30  0001 C CNN
@@ -1862,7 +1834,7 @@ F 3 "" H 1950 7100 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0143
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0143
 U 1 1 55EBC85C
 P 1950 7200
 F 0 "#PWR0143" H 1950 7200 30  0001 C CNN
@@ -1873,7 +1845,7 @@ F 3 "" H 1950 7200 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C103
+L ossc_board-rescue:C C103
 U 1 1 55EC4793
 P 3300 2700
 F 0 "C103" H 3300 2800 40  0000 L CNN
@@ -1884,7 +1856,7 @@ F 3 "~" H 3300 2700 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C76
+L ossc_board-rescue:C C76
 U 1 1 55EC4F39
 P 3250 3600
 F 0 "C76" H 3250 3700 40  0000 L CNN
@@ -1895,7 +1867,7 @@ F 3 "~" H 3250 3600 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C100
+L ossc_board-rescue:C C100
 U 1 1 55EC4FF3
 P 3250 4300
 F 0 "C100" H 3250 4400 40  0000 L CNN
@@ -1914,7 +1886,7 @@ RGB_12_R
 Text Label 3650 6400 0    60   ~ 0
 RGB_12_G
 $Comp
-L GND-RESCUE-ossc_board #PWR0144
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0144
 U 1 1 55EC6C4D
 P 3600 7600
 F 0 "#PWR0144" H 3600 7600 30  0001 C CNN
@@ -1925,7 +1897,7 @@ F 3 "" H 3600 7600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0145
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0145
 U 1 1 55EC6D3F
 P 3800 7600
 F 0 "#PWR0145" H 3800 7600 30  0001 C CNN
@@ -1936,7 +1908,7 @@ F 3 "" H 3800 7600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C104
+L ossc_board-rescue:C C104
 U 1 1 55ED7F3A
 P 3550 3500
 F 0 "C104" H 3550 3600 40  0000 L CNN
@@ -1947,7 +1919,7 @@ F 3 "~" H 3550 3500 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C105
+L ossc_board-rescue:C C105
 U 1 1 55ED867A
 P 3550 4200
 F 0 "C105" H 3550 4300 40  0000 L CNN
@@ -1958,7 +1930,7 @@ F 3 "~" H 3550 4200 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0146
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0146
 U 1 1 55ED8795
 P 3400 4200
 F 0 "#PWR0146" H 3400 4200 30  0001 C CNN
@@ -1969,7 +1941,7 @@ F 3 "" H 3400 4200 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0147
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0147
 U 1 1 55ED888D
 P 3400 3500
 F 0 "#PWR0147" H 3400 3500 30  0001 C CNN
@@ -1992,7 +1964,7 @@ SDA
 Text Label 4750 7000 0    60   ~ 0
 SCL
 $Comp
-L C C106
+L ossc_board-rescue:C C106
 U 1 1 55EEB3FC
 P 4500 1900
 F 0 "C106" H 4500 2000 40  0000 L CNN
@@ -2003,7 +1975,7 @@ F 3 "~" H 4500 1900 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0148
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0148
 U 1 1 55EEB6BF
 P 4500 1750
 F 0 "#PWR0148" H 4500 1750 30  0001 C CNN
@@ -2014,7 +1986,7 @@ F 3 "" H 4500 1750 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0149
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0149
 U 1 1 55EEC004
 P 5000 1400
 F 0 "#PWR0149" H 5000 1400 30  0001 C CNN
@@ -2025,7 +1997,7 @@ F 3 "" H 5000 1400 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C-RESCUE-ossc_board C107
+L ossc_board-rescue:C-RESCUE-ossc_board C107
 U 1 1 55EC52FF
 P 8350 6300
 F 0 "C107" H 8350 6400 40  0000 L CNN
@@ -2036,7 +2008,7 @@ F 3 "~" H 8350 6300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0150
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0150
 U 1 1 55EC5BFD
 P 8350 6500
 F 0 "#PWR0150" H 8350 6500 30  0001 C CNN
@@ -2047,7 +2019,7 @@ F 3 "" H 8350 6500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L FILTER FB6
+L ossc_board-rescue:FILTER FB6
 U 1 1 55F21890
 P 2450 2650
 F 0 "FB6" H 2450 2800 60  0000 C CNN
@@ -2058,7 +2030,7 @@ F 3 "~" H 2450 2650 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0151
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0151
 U 1 1 55F23807
 P 2100 3300
 F 0 "#PWR0151" H 2100 3300 30  0001 C CNN
@@ -2069,7 +2041,7 @@ F 3 "" H 2100 3300 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0152
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0152
 U 1 1 55F239ED
 P 2100 2900
 F 0 "#PWR0152" H 2100 2900 30  0001 C CNN
@@ -2082,7 +2054,7 @@ $EndComp
 Text Label 2450 2250 1    60   ~ 0
 AVDD
 $Comp
-L FILTER FB7
+L ossc_board-rescue:FILTER FB7
 U 1 1 55F242E2
 P 6200 1100
 F 0 "FB7" H 6200 1250 60  0000 C CNN
@@ -2095,7 +2067,7 @@ $EndComp
 Text Label 5900 750  0    60   ~ 0
 AVDD
 $Comp
-L PWR_FLAG #FLG0153
+L ossc_board-rescue:PWR_FLAG #FLG0153
 U 1 1 55F28B8A
 P 6200 1600
 F 0 "#FLG0153" H 6200 1695 50  0001 C CNN
@@ -2106,7 +2078,7 @@ F 3 "" H 6200 1600 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PWR_FLAG #FLG0154
+L ossc_board-rescue:PWR_FLAG #FLG0154
 U 1 1 55F2912C
 P 3350 3000
 F 0 "#FLG0154" H 3350 3095 50  0001 C CNN
@@ -2117,7 +2089,7 @@ F 3 "" H 3350 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0155
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0155
 U 1 1 55F350C7
 P 8700 3000
 F 0 "#PWR0155" H 8700 3000 30  0001 C CNN
@@ -2132,7 +2104,7 @@ AVDD_F
 Text Label 3350 4400 0    60   ~ 0
 AVDD_F
 $Comp
-L CONN_01X03 J6
+L ossc_board-rescue:CONN_01X03 J6
 U 1 1 55F78F8A
 P 4150 5800
 F 0 "J6" H 4150 6000 50  0000 C CNN
@@ -2147,7 +2119,7 @@ AV1_AUD_L
 Text Label 2250 6000 0    60   ~ 0
 AV1_AUD_R
 $Comp
-L GND-RESCUE-ossc_board #PWR0156
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0156
 U 1 1 55F7B5E9
 P 3950 5700
 F 0 "#PWR0156" H 3950 5700 30  0001 C CNN
@@ -2158,7 +2130,7 @@ F 3 "" H 3950 5700 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0157
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0157
 U 1 1 55F7E41D
 P 2100 4300
 F 0 "#PWR0157" H 2100 4300 30  0001 C CNN
@@ -2173,7 +2145,7 @@ AV1_AUD_L
 Text Label 2150 4900 1    60   ~ 0
 AV1_AUD_R
 $Comp
-L C C36
+L ossc_board-rescue:C C36
 U 1 1 56474DB6
 P 4250 7250
 F 0 "C36" H 4275 7350 50  0000 L CNN
@@ -2184,7 +2156,7 @@ F 3 "" H 4250 7250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C33
+L ossc_board-rescue:C C33
 U 1 1 56474ED6
 P 4250 6850
 F 0 "C33" H 4275 6950 50  0000 L CNN
@@ -2195,7 +2167,7 @@ F 3 "" H 4250 6850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0158
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0158
 U 1 1 564752A2
 P 4250 7400
 F 0 "#PWR0158" H 4250 7400 30  0001 C CNN
@@ -2206,7 +2178,7 @@ F 3 "" H 4250 7400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND-RESCUE-ossc_board #PWR0159
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0159
 U 1 1 564753A3
 P 4400 6700
 F 0 "#PWR0159" H 4400 6700 30  0001 C CNN
@@ -2217,7 +2189,7 @@ F 3 "" H 4400 6700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R38
+L ossc_board-rescue:R R38
 U 1 1 56475AE2
 P 4550 7000
 F 0 "R38" V 4630 7000 50  0000 C CNN
@@ -2228,7 +2200,7 @@ F 3 "" H 4550 7000 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R44
+L ossc_board-rescue:R R44
 U 1 1 56475E85
 P 4550 7100
 F 0 "R44" V 4630 7100 50  0000 C CNN
@@ -2239,7 +2211,7 @@ F 3 "" H 4550 7100 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L SPX2920M3-3.3 U5
+L ossc_board-rescue:SPX2920M3-3.3 U5
 U 1 1 564864D6
 P 10250 3950
 F 0 "U5" H 10250 4200 40  0000 C CNN
@@ -2268,7 +2240,7 @@ max. 25mA
 Text Notes 9400 5750 0    60   ~ 0
 max. 300mA
 $Comp
-L C-RESCUE-ossc_board C109
+L ossc_board-rescue:C-RESCUE-ossc_board C109
 U 1 1 56507D73
 P 8650 5400
 F 0 "C109" H 8650 5500 40  0000 L CNN
@@ -2766,7 +2738,7 @@ Wire Wire Line
 	10050 5500 9550 5500
 Connection ~ 10850 5850
 $Comp
-L GND-RESCUE-ossc_board #PWR0160
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0160
 U 1 1 56508BFD
 P 8650 5600
 F 0 "#PWR0160" H 8650 5600 30  0001 C CNN
@@ -2794,7 +2766,7 @@ AV2_AUD_L
 Text HLabel 2750 5800 0    60   Output ~ 0
 AV2_AUD_R
 $Comp
-L CONN_01X03 J7
+L ossc_board-rescue:CONN_01X03 J7
 U 1 1 58C63142
 P 3650 1450
 F 0 "J7" H 3650 1650 50  0000 C CNN
@@ -2809,7 +2781,7 @@ AV3_AUD_L
 Text HLabel 3450 1550 0    60   Output ~ 0
 AV3_AUD_R
 $Comp
-L GND-RESCUE-ossc_board #PWR0161
+L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0161
 U 1 1 58C63957
 P 3450 1350
 F 0 "#PWR0161" H 3450 1350 30  0001 C CNN
@@ -2832,7 +2804,7 @@ AV1_AUD_L
 Text Label 2800 950  0    60   ~ 0
 AV1_AUD_R
 $Comp
-L DPDT SW4
+L ossc_board-rescue:DPDT SW4
 U 1 1 58D31ED2
 P 3250 5750
 F 0 "SW4" H 3250 6150 50  0000 C CNN
