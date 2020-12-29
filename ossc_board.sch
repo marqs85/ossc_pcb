@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:ossc_board-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "Open Source Scan Converter"
-Date "2017-07-03"
-Rev "1.6"
+Date "2020-12-28"
+Rev "1.7"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -187,7 +186,7 @@ F41 "AV3_AUD_L" I L 8350 6500 60
 F42 "AV3_AUD_R" I L 8350 6600 60 
 $EndSheet
 $Comp
-L ossc_board-rescue:CONN_01X01 MH1
+L Mechanical:MountingHole MH1
 U 1 1 55126368
 P 1250 950
 F 0 "MH1" H 1330 950 40  0000 L CNN
@@ -198,7 +197,7 @@ F 3 "" H 1250 950 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:CONN_01X01 MH3
+L Mechanical:MountingHole MH3
 U 1 1 55129B56
 P 1350 6250
 F 0 "MH3" H 1430 6250 40  0000 L CNN
@@ -209,18 +208,7 @@ F 3 "" H 1350 6250 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:CONN_01X01 MH2
-U 1 1 5512C83E
-P 10450 1000
-F 0 "MH2" H 10530 1000 40  0000 L CNN
-F 1 "CONN_1" H 10450 1055 30  0001 C CNN
-F 2 "Connect:1pin" H 10450 1000 60  0001 C CNN
-F 3 "" H 10450 1000 60  0000 C CNN
-	1    10450 1000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L ossc_board-rescue:CONN_01X01 MH4
+L Mechanical:MountingHole MH4
 U 1 1 5512E422
 P 10400 6200
 F 0 "MH4" H 10480 6200 40  0000 L CNN
@@ -440,10 +428,6 @@ Wire Wire Line
 Connection ~ 3800 5550
 Wire Wire Line
 	3050 5900 8350 5900
-NoConn ~ 1350 6450
-NoConn ~ 1250 1150
-NoConn ~ 10450 1200
-NoConn ~ 10400 6400
 Wire Wire Line
 	3050 6100 8350 6100
 Wire Wire Line
@@ -464,4 +448,15 @@ Wire Wire Line
 	6950 4300 8350 4300
 Wire Wire Line
 	3800 5550 8350 5550
+$Comp
+L Mechanical:MountingHole MH2
+U 1 1 5512C83E
+P 10450 1000
+F 0 "MH2" H 10530 1000 40  0000 L CNN
+F 1 "CONN_1" H 10450 1055 30  0001 C CNN
+F 2 "Connect:1pin" H 10450 1000 60  0001 C CNN
+F 3 "" H 10450 1000 60  0000 C CNN
+	1    10450 1000
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

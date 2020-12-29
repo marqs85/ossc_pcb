@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:ossc_board-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
 Title "Open Source Scan Converter"
-Date "2017-07-03"
-Rev "1.6"
+Date "2020-12-28"
+Rev "1.7"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ossc_board-rescue:IT6613 U3
+L custom_components:IT6613 U3
 U 1 1 54FF6BBA
 P 4250 3800
 F 0 "U3" H 4250 3700 50  0000 C CNN
@@ -26,7 +25,7 @@ F 3 "DOCUMENTATION" H 4250 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:HDMI_CONN J4
+L custom_components:HDMI_CONN J4
 U 1 1 54FF6BC9
 P 10300 3750
 F 0 "J4" H 10550 3350 50  0000 C CNN
@@ -102,7 +101,7 @@ PCLK
 Text HLabel 2250 5000 0    60   Input ~ 0
 SYSRSTN
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C74
+L Device:C C74
 U 1 1 5501E4DA
 P 3000 7400
 F 0 "C74" H 3000 7500 40  0000 L CNN
@@ -113,31 +112,20 @@ F 3 "~" H 3000 7400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:FILTER FB1
-U 1 1 5501ED08
-P 3250 6850
-F 0 "FB1" H 3250 7000 60  0000 C CNN
-F 1 "MPZ1608S221A" H 3250 6750 60  0000 C CNN
-F 2 "custom_components:SM0603_Resistor_libcms" H 3250 6850 60  0001 C CNN
-F 3 "~" H 3250 6850 60  0000 C CNN
-	1    3250 6850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0162
+L power:GND #PWR0162
 U 1 1 5501ED58
-P 3000 7600
-F 0 "#PWR0162" H 3000 7600 30  0001 C CNN
-F 1 "GND" H 3000 7530 30  0001 C CNN
-F 2 "" H 3000 7600 60  0001 C CNN
-F 3 "" H 3000 7600 60  0000 C CNN
-	1    3000 7600
+P 3000 7550
+F 0 "#PWR0162" H 3000 7550 30  0001 C CNN
+F 1 "GND" H 3000 7480 30  0001 C CNN
+F 2 "" H 3000 7550 60  0001 C CNN
+F 3 "" H 3000 7550 60  0000 C CNN
+	1    3000 7550
 	1    0    0    -1  
 $EndComp
 Text Label 3250 7600 1    60   ~ 0
 AVCC1V8
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0163
+L power:GND #PWR0163
 U 1 1 5501F3C5
 P 4550 5500
 F 0 "#PWR0163" H 4550 5500 30  0001 C CNN
@@ -148,7 +136,7 @@ F 3 "" H 4550 5500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0164
+L power:GND #PWR0164
 U 1 1 5501F3CB
 P 4750 5500
 F 0 "#PWR0164" H 4750 5500 30  0001 C CNN
@@ -159,7 +147,7 @@ F 3 "" H 4750 5500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C80
+L Device:C C80
 U 1 1 5501F454
 P 4400 7400
 F 0 "C80" H 4400 7500 40  0000 L CNN
@@ -170,18 +158,18 @@ F 3 "~" H 4400 7400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0165
+L power:GND #PWR0165
 U 1 1 5501F462
-P 4400 7600
-F 0 "#PWR0165" H 4400 7600 30  0001 C CNN
-F 1 "GND" H 4400 7530 30  0001 C CNN
-F 2 "" H 4400 7600 60  0001 C CNN
-F 3 "" H 4400 7600 60  0000 C CNN
-	1    4400 7600
+P 4400 7550
+F 0 "#PWR0165" H 4400 7550 30  0001 C CNN
+F 1 "GND" H 4400 7480 30  0001 C CNN
+F 2 "" H 4400 7550 60  0001 C CNN
+F 3 "" H 4400 7550 60  0000 C CNN
+	1    4400 7550
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C77
+L Device:C C77
 U 1 1 5501F48F
 P 3400 7400
 F 0 "C77" H 3400 7500 40  0000 L CNN
@@ -192,31 +180,31 @@ F 3 "~" H 3400 7400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:FILTER FB2
+L Device:Ferrite_Bead FB2
 U 1 1 5501F495
 P 3650 6850
-F 0 "FB2" H 3650 7000 60  0000 C CNN
-F 1 "MPZ1608S221A" H 3650 6750 60  0000 C CNN
+F 0 "FB2" V 3750 7000 60  0000 C CNN
+F 1 "MPZ1608S221A" V 3550 6850 60  0000 C CNN
 F 2 "custom_components:SM0603_Resistor_libcms" H 3650 6850 60  0001 C CNN
 F 3 "~" H 3650 6850 60  0000 C CNN
 	1    3650 6850
-	0    -1   -1   0   
+	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0166
+L power:GND #PWR0166
 U 1 1 5501F49D
-P 3400 7600
-F 0 "#PWR0166" H 3400 7600 30  0001 C CNN
-F 1 "GND" H 3400 7530 30  0001 C CNN
-F 2 "" H 3400 7600 60  0001 C CNN
-F 3 "" H 3400 7600 60  0000 C CNN
-	1    3400 7600
+P 3400 7550
+F 0 "#PWR0166" H 3400 7550 30  0001 C CNN
+F 1 "GND" H 3400 7480 30  0001 C CNN
+F 2 "" H 3400 7550 60  0001 C CNN
+F 3 "" H 3400 7550 60  0000 C CNN
+	1    3400 7550
 	1    0    0    -1  
 $EndComp
 Text Label 3650 7600 1    60   ~ 0
 AVCC1V8
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0167
+L power:GND #PWR0167
 U 1 1 5501F4A7
 P 3350 5500
 F 0 "#PWR0167" H 3350 5500 30  0001 C CNN
@@ -227,7 +215,7 @@ F 3 "" H 3350 5500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0168
+L power:GND #PWR0168
 U 1 1 5501F4AD
 P 3050 5500
 F 0 "#PWR0168" H 3050 5500 30  0001 C CNN
@@ -238,7 +226,7 @@ F 3 "" H 3050 5500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0169
+L power:GND #PWR0169
 U 1 1 5501F4CF
 P 5450 5500
 F 0 "#PWR0169" H 5450 5500 30  0001 C CNN
@@ -249,7 +237,7 @@ F 3 "" H 5450 5500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0170
+L power:GND #PWR0170
 U 1 1 5501F4D5
 P 2250 3000
 F 0 "#PWR0170" H 2250 3000 30  0001 C CNN
@@ -260,7 +248,7 @@ F 3 "" H 2250 3000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0171
+L power:GND #PWR0171
 U 1 1 5501F4DB
 P 2250 3300
 F 0 "#PWR0171" H 2250 3300 30  0001 C CNN
@@ -271,7 +259,7 @@ F 3 "" H 2250 3300 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0172
+L power:GND #PWR0172
 U 1 1 5501F4E1
 P 2250 3200
 F 0 "#PWR0172" H 2250 3200 30  0001 C CNN
@@ -282,7 +270,7 @@ F 3 "" H 2250 3200 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0173
+L power:GND #PWR0173
 U 1 1 5501F4E7
 P 2250 2900
 F 0 "#PWR0173" H 2250 2900 30  0001 C CNN
@@ -293,7 +281,7 @@ F 3 "" H 2250 2900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0174
+L power:GND #PWR0174
 U 1 1 5501F4ED
 P 2250 3100
 F 0 "#PWR0174" H 2250 3100 30  0001 C CNN
@@ -304,7 +292,7 @@ F 3 "" H 2250 3100 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0175
+L power:GND #PWR0175
 U 1 1 5501F505
 P 2250 4000
 F 0 "#PWR0175" H 2250 4000 30  0001 C CNN
@@ -315,7 +303,7 @@ F 3 "" H 2250 4000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0176
+L power:GND #PWR0176
 U 1 1 5501F50B
 P 2250 4100
 F 0 "#PWR0176" H 2250 4100 30  0001 C CNN
@@ -326,7 +314,7 @@ F 3 "" H 2250 4100 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0177
+L power:GND #PWR0177
 U 1 1 5501F511
 P 2250 4200
 F 0 "#PWR0177" H 2250 4200 30  0001 C CNN
@@ -337,7 +325,7 @@ F 3 "" H 2250 4200 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0178
+L power:GND #PWR0178
 U 1 1 5501F517
 P 2250 4300
 F 0 "#PWR0178" H 2250 4300 30  0001 C CNN
@@ -348,7 +336,7 @@ F 3 "" H 2250 4300 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0179
+L power:GND #PWR0179
 U 1 1 5501F51D
 P 2250 4400
 F 0 "#PWR0179" H 2250 4400 30  0001 C CNN
@@ -359,7 +347,7 @@ F 3 "" H 2250 4400 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0180
+L power:GND #PWR0180
 U 1 1 5501F523
 P 2250 4500
 F 0 "#PWR0180" H 2250 4500 30  0001 C CNN
@@ -370,7 +358,7 @@ F 3 "" H 2250 4500 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0181
+L power:GND #PWR0181
 U 1 1 5501F529
 P 2250 4600
 F 0 "#PWR0181" H 2250 4600 30  0001 C CNN
@@ -381,7 +369,7 @@ F 3 "" H 2250 4600 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0182
+L power:GND #PWR0182
 U 1 1 5501F52F
 P 2250 4700
 F 0 "#PWR0182" H 2250 4700 30  0001 C CNN
@@ -392,7 +380,7 @@ F 3 "" H 2250 4700 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0183
+L power:GND #PWR0183
 U 1 1 5501F535
 P 2250 4800
 F 0 "#PWR0183" H 2250 4800 30  0001 C CNN
@@ -404,7 +392,7 @@ F 3 "" H 2250 4800 60  0000 C CNN
 $EndComp
 NoConn ~ 4950 5500
 $Comp
-L ossc_board-rescue:R-RESCUE-ossc_board R25
+L Device:R R25
 U 1 1 5501F53D
 P 3150 5750
 F 0 "R25" V 3230 5750 40  0000 C CNN
@@ -417,7 +405,7 @@ $EndComp
 Text Label 2700 6000 0    60   ~ 0
 AVCC1V8
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0184
+L power:GND #PWR0184
 U 1 1 5501F593
 P 2250 3800
 F 0 "#PWR0184" H 2250 3800 30  0001 C CNN
@@ -428,7 +416,7 @@ F 3 "" H 2250 3800 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0185
+L power:GND #PWR0185
 U 1 1 5501F599
 P 3950 5500
 F 0 "#PWR0185" H 3950 5500 30  0001 C CNN
@@ -439,7 +427,7 @@ F 3 "" H 3950 5500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:R-RESCUE-ossc_board R26
+L Device:R R26
 U 1 1 5501F59F
 P 6500 4900
 F 0 "R26" V 6580 4900 40  0000 C CNN
@@ -450,20 +438,20 @@ F 3 "~" H 6500 4900 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0186
+L power:GND #PWR0186
 U 1 1 5501F5A5
-P 6750 4900
-F 0 "#PWR0186" H 6750 4900 30  0001 C CNN
-F 1 "GND" H 6750 4830 30  0001 C CNN
-F 2 "" H 6750 4900 60  0001 C CNN
-F 3 "" H 6750 4900 60  0000 C CNN
-	1    6750 4900
+P 6650 4900
+F 0 "#PWR0186" H 6650 4900 30  0001 C CNN
+F 1 "GND" H 6650 4830 30  0001 C CNN
+F 2 "" H 6650 4900 60  0001 C CNN
+F 3 "" H 6650 4900 60  0000 C CNN
+	1    6650 4900
 	0    -1   -1   0   
 $EndComp
 Text Label 6350 4600 0    60   ~ 0
 DVDD1V8
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0187
+L power:GND #PWR0187
 U 1 1 5501F5D4
 P 6250 4700
 F 0 "#PWR0187" H 6250 4700 30  0001 C CNN
@@ -474,7 +462,7 @@ F 3 "" H 6250 4700 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0188
+L power:GND #PWR0188
 U 1 1 5501F5DC
 P 6250 3600
 F 0 "#PWR0188" H 6250 3600 30  0001 C CNN
@@ -485,33 +473,22 @@ F 3 "" H 6250 3600 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C85
+L Device:C C85
 U 1 1 5501F5E4
-P 6950 4600
-F 0 "C85" H 6950 4700 40  0000 L CNN
-F 1 "0.1u" H 6956 4515 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 6988 4450 30  0001 C CNN
-F 3 "~" H 6950 4600 60  0000 C CNN
-	1    6950 4600
+P 6900 4600
+F 0 "C85" H 6900 4700 40  0000 L CNN
+F 1 "0.1u" H 6906 4515 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 6938 4450 30  0001 C CNN
+F 3 "~" H 6900 4600 60  0000 C CNN
+	1    6900 4600
 	0    -1   -1   0   
 $EndComp
 Text Label 6350 3700 0    60   ~ 0
 DVDD1V8
-$Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C84
-U 1 1 5501F60B
-P 6950 3700
-F 0 "C84" H 6950 3800 40  0000 L CNN
-F 1 "0.1u" H 6956 3615 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 6988 3550 30  0001 C CNN
-F 3 "~" H 6950 3700 60  0000 C CNN
-	1    6950 3700
-	0    -1   -1   0   
-$EndComp
 Text Label 5450 1950 1    60   ~ 0
 DVDD1V8
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C82
+L Device:C C82
 U 1 1 5501F614
 P 5450 1400
 F 0 "C82" H 5450 1500 40  0000 L CNN
@@ -522,7 +499,7 @@ F 3 "~" H 5450 1400 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0189
+L power:GND #PWR0189
 U 1 1 5501F623
 P 4350 2100
 F 0 "#PWR0189" H 4350 2100 30  0001 C CNN
@@ -533,7 +510,7 @@ F 3 "" H 4350 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0190
+L power:GND #PWR0190
 U 1 1 5501F629
 P 3050 2100
 F 0 "#PWR0190" H 3050 2100 30  0001 C CNN
@@ -546,7 +523,7 @@ $EndComp
 Text Label 3150 2000 1    60   ~ 0
 DVDD1V8
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C75
+L Device:C C75
 U 1 1 5501F631
 P 3150 1400
 F 0 "C75" H 3150 1500 40  0000 L CNN
@@ -559,59 +536,48 @@ $EndComp
 Text Label 2200 3700 2    60   ~ 0
 DVDD1V8
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C69
+L Device:C C69
 U 1 1 5501F63A
-P 1600 3700
-F 0 "C69" H 1600 3800 40  0000 L CNN
-F 1 "0.1u" H 1606 3615 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 1638 3550 30  0001 C CNN
-F 3 "~" H 1600 3700 60  0000 C CNN
-	1    1600 3700
+P 1650 3700
+F 0 "C69" H 1650 3800 40  0000 L CNN
+F 1 "0.1u" H 1656 3615 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 1688 3550 30  0001 C CNN
+F 3 "~" H 1650 3700 60  0000 C CNN
+	1    1650 3700
 	0    1    1    0   
 $EndComp
 Text Label 2200 3900 2    60   ~ 0
 DVDD3V3
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C73
+L Device:C C73
 U 1 1 5501F643
-P 1600 3900
-F 0 "C73" H 1600 4000 40  0000 L CNN
-F 1 "0.1u" H 1606 3815 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 1638 3750 30  0001 C CNN
-F 3 "~" H 1600 3900 60  0000 C CNN
-	1    1600 3900
+P 1650 3900
+F 0 "C73" H 1650 4000 40  0000 L CNN
+F 1 "0.1u" H 1656 3815 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 1688 3750 30  0001 C CNN
+F 3 "~" H 1650 3900 60  0000 C CNN
+	1    1650 3900
 	0    1    1    0   
 $EndComp
 Text Label 6350 4800 0    60   ~ 0
 DVDD3V3
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C86
+L Device:C C86
 U 1 1 5501F64D
-P 6950 4800
-F 0 "C86" H 6950 4900 40  0000 L CNN
-F 1 "0.1u" H 6956 4715 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 6988 4650 30  0001 C CNN
-F 3 "~" H 6950 4800 60  0000 C CNN
-	1    6950 4800
+P 6900 4800
+F 0 "C86" H 6900 4900 40  0000 L CNN
+F 1 "0.1u" H 6906 4715 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 6938 4650 30  0001 C CNN
+F 3 "~" H 6900 4800 60  0000 C CNN
+	1    6900 4800
 	0    -1   -1   0   
 $EndComp
 Text Label 6350 3500 0    60   ~ 0
 DVDD3V3
-$Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C83
-U 1 1 5501F681
-P 6950 3500
-F 0 "C83" H 6950 3600 40  0000 L CNN
-F 1 "0.1u" H 6956 3415 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 6988 3350 30  0001 C CNN
-F 3 "~" H 6950 3500 60  0000 C CNN
-	1    6950 3500
-	0    -1   -1   0   
-$EndComp
 Text Label 4150 1950 1    60   ~ 0
 DVDD3V3
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C79
+L Device:C C79
 U 1 1 5501F68A
 P 4150 1400
 F 0 "C79" H 4150 1500 40  0000 L CNN
@@ -626,7 +592,7 @@ TMDS_CLK+
 Text Label 3450 6050 1    60   ~ 0
 TMDS_CLK-
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C78
+L Device:C C78
 U 1 1 5501F8C0
 P 4000 7400
 F 0 "C78" H 4000 7500 40  0000 L CNN
@@ -637,14 +603,14 @@ F 3 "~" H 4000 7400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0191
+L power:GND #PWR0191
 U 1 1 5501F8CC
-P 4000 7600
-F 0 "#PWR0191" H 4000 7600 30  0001 C CNN
-F 1 "GND" H 4000 7530 30  0001 C CNN
-F 2 "" H 4000 7600 60  0001 C CNN
-F 3 "" H 4000 7600 60  0000 C CNN
-	1    4000 7600
+P 4000 7550
+F 0 "#PWR0191" H 4000 7550 30  0001 C CNN
+F 1 "GND" H 4000 7480 30  0001 C CNN
+F 2 "" H 4000 7550 60  0001 C CNN
+F 3 "" H 4000 7550 60  0000 C CNN
+	1    4000 7550
 	1    0    0    -1  
 $EndComp
 Text Label 3750 6050 1    60   ~ 0
@@ -660,7 +626,7 @@ TMDS_D2-
 Text Label 4450 6050 1    60   ~ 0
 TMDS_D2+
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C81
+L Device:C C81
 U 1 1 5501F95D
 P 4850 7400
 F 0 "C81" H 4850 7500 40  0000 L CNN
@@ -671,14 +637,14 @@ F 3 "~" H 4850 7400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0192
+L power:GND #PWR0192
 U 1 1 5501F963
-P 4850 7600
-F 0 "#PWR0192" H 4850 7600 30  0001 C CNN
-F 1 "GND" H 4850 7530 30  0001 C CNN
-F 2 "" H 4850 7600 60  0001 C CNN
-F 3 "" H 4850 7600 60  0000 C CNN
-	1    4850 7600
+P 4850 7550
+F 0 "#PWR0192" H 4850 7550 30  0001 C CNN
+F 1 "GND" H 4850 7480 30  0001 C CNN
+F 2 "" H 4850 7550 60  0001 C CNN
+F 3 "" H 4850 7550 60  0000 C CNN
+	1    4850 7550
 	1    0    0    -1  
 $EndComp
 Text Label 4850 6050 1    60   ~ 0
@@ -690,7 +656,7 @@ DDC_SCL
 Text Label 7200 5000 0    60   ~ 0
 HPD
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0193
+L power:GND #PWR0193
 U 1 1 5501FA6A
 P 9550 4450
 F 0 "#PWR0193" H 9550 4450 30  0001 C CNN
@@ -717,7 +683,7 @@ TMDS_CLK+
 Text Label 8550 3900 0    60   ~ 0
 TMDS_CLK-
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0194
+L power:GND #PWR0194
 U 1 1 5501FBCF
 P 9550 2950
 F 0 "#PWR0194" H 9550 2950 30  0001 C CNN
@@ -728,7 +694,7 @@ F 3 "" H 9550 2950 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0195
+L power:GND #PWR0195
 U 1 1 5501FBD5
 P 9550 3250
 F 0 "#PWR0195" H 9550 3250 30  0001 C CNN
@@ -739,7 +705,7 @@ F 3 "" H 9550 3250 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0196
+L power:GND #PWR0196
 U 1 1 5501FBDB
 P 9550 3550
 F 0 "#PWR0196" H 9550 3550 30  0001 C CNN
@@ -750,7 +716,7 @@ F 3 "" H 9550 3550 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0197
+L power:GND #PWR0197
 U 1 1 5501FBE1
 P 9550 3850
 F 0 "#PWR0197" H 9550 3850 30  0001 C CNN
@@ -769,42 +735,42 @@ AVDD3V3
 Text Label 7650 6300 0    60   ~ 0
 DVDD3V3
 $Comp
-L ossc_board-rescue:TLV71209DBV-RESCUE-ossc_board U15
+L Regulator_Linear:TLV70018_SOT23-5 U15
 U 1 1 5502F816
-P 9950 5600
+P 9950 5650
 AR Path="/5502F816" Ref="U15"  Part="1" 
 AR Path="/54FF6758/5502F816" Ref="U15"  Part="1" 
-F 0 "U15" H 9700 5800 40  0000 C CNN
-F 1 "TLV70018" H 10150 5800 40  0000 C CNN
-F 2 "custom_components:SOT-23-5_Handsoldering" H 9950 5700 35  0001 C CIN
-F 3 "" H 9950 5600 60  0000 C CNN
-	1    9950 5600
+F 0 "U15" H 9700 5850 40  0000 C CNN
+F 1 "TLV70018" H 10150 5850 40  0000 C CNN
+F 2 "custom_components:SOT-23-5_Handsoldering" H 9950 5750 35  0001 C CIN
+F 3 "" H 9950 5650 60  0000 C CNN
+	1    9950 5650
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C87
+L Device:C C87
 U 1 1 5502F81C
-P 9350 5750
-F 0 "C87" H 9350 5850 40  0000 L CNN
-F 1 "1u" H 9356 5665 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 9388 5600 30  0001 C CNN
-F 3 "~" H 9350 5750 60  0000 C CNN
-	1    9350 5750
+P 9350 5700
+F 0 "C87" H 9350 5800 40  0000 L CNN
+F 1 "1u" H 9356 5615 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 9388 5550 30  0001 C CNN
+F 3 "~" H 9350 5700 60  0000 C CNN
+	1    9350 5700
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C89
+L Device:C C89
 U 1 1 5502F822
-P 10500 5750
-F 0 "C89" H 10500 5850 40  0000 L CNN
-F 1 "1u" H 10506 5665 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 10538 5600 30  0001 C CNN
-F 3 "~" H 10500 5750 60  0000 C CNN
-	1    10500 5750
+P 10500 5700
+F 0 "C89" H 10500 5800 40  0000 L CNN
+F 1 "1u" H 10506 5615 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 10538 5550 30  0001 C CNN
+F 3 "~" H 10500 5700 60  0000 C CNN
+	1    10500 5700
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0198
+L power:GND #PWR0198
 U 1 1 5502F828
 P 10500 6000
 F 0 "#PWR0198" H 10500 6000 30  0001 C CNN
@@ -817,42 +783,42 @@ $EndComp
 Text Label 10650 5550 0    60   ~ 0
 DVDD1V8
 $Comp
-L ossc_board-rescue:TLV71209DBV-RESCUE-ossc_board U16
+L Regulator_Linear:TLV70018_SOT23-5 U16
 U 1 1 5502F844
-P 9950 6550
+P 9950 6600
 AR Path="/5502F844" Ref="U16"  Part="1" 
 AR Path="/54FF6758/5502F844" Ref="U16"  Part="1" 
-F 0 "U16" H 9700 6750 40  0000 C CNN
-F 1 "TLV70018" H 10150 6750 40  0000 C CNN
-F 2 "custom_components:SOT-23-5_Handsoldering" H 9950 6650 35  0001 C CIN
-F 3 "" H 9950 6550 60  0000 C CNN
-	1    9950 6550
+F 0 "U16" H 9700 6800 40  0000 C CNN
+F 1 "TLV70018" H 10150 6800 40  0000 C CNN
+F 2 "custom_components:SOT-23-5_Handsoldering" H 9950 6700 35  0001 C CIN
+F 3 "" H 9950 6600 60  0000 C CNN
+	1    9950 6600
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C88
+L Device:C C88
 U 1 1 5502F84A
-P 9350 6700
-F 0 "C88" H 9350 6800 40  0000 L CNN
-F 1 "1u" H 9356 6615 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 9388 6550 30  0001 C CNN
-F 3 "~" H 9350 6700 60  0000 C CNN
-	1    9350 6700
+P 9350 6650
+F 0 "C88" H 9350 6750 40  0000 L CNN
+F 1 "1u" H 9356 6565 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 9388 6500 30  0001 C CNN
+F 3 "~" H 9350 6650 60  0000 C CNN
+	1    9350 6650
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C90
+L Device:C C90
 U 1 1 5502F850
-P 10500 6700
-F 0 "C90" H 10500 6800 40  0000 L CNN
-F 1 "1u" H 10506 6615 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 10538 6550 30  0001 C CNN
-F 3 "~" H 10500 6700 60  0000 C CNN
-	1    10500 6700
+P 10500 6650
+F 0 "C90" H 10500 6750 40  0000 L CNN
+F 1 "1u" H 10506 6565 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 10538 6500 30  0001 C CNN
+F 3 "~" H 10500 6650 60  0000 C CNN
+	1    10500 6650
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0199
+L power:GND #PWR0199
 U 1 1 5502F856
 P 10500 6950
 F 0 "#PWR0199" H 10500 6950 30  0001 C CNN
@@ -873,143 +839,105 @@ max. 200mA
 Text Label 7650 6450 0    60   ~ 0
 AVCC3V3
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0200
+L power:GND #PWR0200
 U 1 1 55040DCB
-P 7150 4800
-F 0 "#PWR0200" H 7150 4800 30  0001 C CNN
-F 1 "GND" H 7150 4730 30  0001 C CNN
-F 2 "" H 7150 4800 60  0001 C CNN
-F 3 "" H 7150 4800 60  0000 C CNN
-	1    7150 4800
+P 7050 4800
+F 0 "#PWR0200" H 7050 4800 30  0001 C CNN
+F 1 "GND" H 7050 4730 30  0001 C CNN
+F 2 "" H 7050 4800 60  0001 C CNN
+F 3 "" H 7050 4800 60  0000 C CNN
+	1    7050 4800
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0201
+L power:GND #PWR0201
 U 1 1 55040DDD
-P 7150 4600
-F 0 "#PWR0201" H 7150 4600 30  0001 C CNN
-F 1 "GND" H 7150 4530 30  0001 C CNN
-F 2 "" H 7150 4600 60  0001 C CNN
-F 3 "" H 7150 4600 60  0000 C CNN
-	1    7150 4600
+P 7050 4600
+F 0 "#PWR0201" H 7050 4600 30  0001 C CNN
+F 1 "GND" H 7050 4530 30  0001 C CNN
+F 2 "" H 7050 4600 60  0001 C CNN
+F 3 "" H 7050 4600 60  0000 C CNN
+	1    7050 4600
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0202
-U 1 1 55040EFE
-P 7150 3700
-F 0 "#PWR0202" H 7150 3700 30  0001 C CNN
-F 1 "GND" H 7150 3630 30  0001 C CNN
-F 2 "" H 7150 3700 60  0001 C CNN
-F 3 "" H 7150 3700 60  0000 C CNN
-	1    7150 3700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0203
-U 1 1 55040F04
-P 7150 3500
-F 0 "#PWR0203" H 7150 3500 30  0001 C CNN
-F 1 "GND" H 7150 3430 30  0001 C CNN
-F 2 "" H 7150 3500 60  0001 C CNN
-F 3 "" H 7150 3500 60  0000 C CNN
-	1    7150 3500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0204
+L power:GND #PWR0204
 U 1 1 55040FC8
-P 1400 3700
-F 0 "#PWR0204" H 1400 3700 30  0001 C CNN
-F 1 "GND" H 1400 3630 30  0001 C CNN
-F 2 "" H 1400 3700 60  0001 C CNN
-F 3 "" H 1400 3700 60  0000 C CNN
-	1    1400 3700
+P 1500 3700
+F 0 "#PWR0204" H 1500 3700 30  0001 C CNN
+F 1 "GND" H 1500 3630 30  0001 C CNN
+F 2 "" H 1500 3700 60  0001 C CNN
+F 3 "" H 1500 3700 60  0000 C CNN
+	1    1500 3700
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0205
+L power:GND #PWR0205
 U 1 1 55040FCE
-P 1400 3900
-F 0 "#PWR0205" H 1400 3900 30  0001 C CNN
-F 1 "GND" H 1400 3830 30  0001 C CNN
-F 2 "" H 1400 3900 60  0001 C CNN
-F 3 "" H 1400 3900 60  0000 C CNN
-	1    1400 3900
+P 1500 3900
+F 0 "#PWR0205" H 1500 3900 30  0001 C CNN
+F 1 "GND" H 1500 3830 30  0001 C CNN
+F 2 "" H 1500 3900 60  0001 C CNN
+F 3 "" H 1500 3900 60  0000 C CNN
+	1    1500 3900
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0206
+L power:GND #PWR0206
 U 1 1 550410F9
-P 3150 1200
-F 0 "#PWR0206" H 3150 1200 30  0001 C CNN
-F 1 "GND" H 3150 1130 30  0001 C CNN
-F 2 "" H 3150 1200 60  0001 C CNN
-F 3 "" H 3150 1200 60  0000 C CNN
-	1    3150 1200
+P 3150 1250
+F 0 "#PWR0206" H 3150 1250 30  0001 C CNN
+F 1 "GND" H 3150 1180 30  0001 C CNN
+F 2 "" H 3150 1250 60  0001 C CNN
+F 3 "" H 3150 1250 60  0000 C CNN
+	1    3150 1250
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0207
+L power:GND #PWR0207
 U 1 1 550410FF
-P 4150 1200
-F 0 "#PWR0207" H 4150 1200 30  0001 C CNN
-F 1 "GND" H 4150 1130 30  0001 C CNN
-F 2 "" H 4150 1200 60  0001 C CNN
-F 3 "" H 4150 1200 60  0000 C CNN
-	1    4150 1200
+P 4150 1250
+F 0 "#PWR0207" H 4150 1250 30  0001 C CNN
+F 1 "GND" H 4150 1180 30  0001 C CNN
+F 2 "" H 4150 1250 60  0001 C CNN
+F 3 "" H 4150 1250 60  0000 C CNN
+	1    4150 1250
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0208
+L power:GND #PWR0208
 U 1 1 55041105
-P 5450 1200
-F 0 "#PWR0208" H 5450 1200 30  0001 C CNN
-F 1 "GND" H 5450 1130 30  0001 C CNN
-F 2 "" H 5450 1200 60  0001 C CNN
-F 3 "" H 5450 1200 60  0000 C CNN
-	1    5450 1200
+P 5450 1250
+F 0 "#PWR0208" H 5450 1250 30  0001 C CNN
+F 1 "GND" H 5450 1180 30  0001 C CNN
+F 2 "" H 5450 1250 60  0001 C CNN
+F 3 "" H 5450 1250 60  0000 C CNN
+	1    5450 1250
 	-1   0    0    1   
 $EndComp
 Text Label 4650 7600 1    60   ~ 0
 AVCC1V8
 Wire Wire Line
-	3250 5500 3250 6500
-Wire Wire Line
-	3250 7200 3250 7650
+	3250 5500 3250 6450
 Connection ~ 3250 6450
 Wire Wire Line
-	3000 7200 3000 6450
+	3000 6450 3100 6450
 Wire Wire Line
-	3000 6450 3250 6450
-Wire Wire Line
-	4650 5500 4650 6500
-Wire Wire Line
-	4650 7200 4650 7650
+	4650 5500 4650 6450
 Connection ~ 4650 6450
 Wire Wire Line
-	4400 7200 4400 6450
+	4400 6450 4500 6450
 Wire Wire Line
-	4400 6450 4650 6450
-Wire Wire Line
-	3650 5500 3650 6500
-Wire Wire Line
-	3650 7200 3650 7650
+	3650 5500 3650 6450
 Connection ~ 3650 6450
 Wire Wire Line
-	3400 7200 3400 6450
-Wire Wire Line
-	3400 6450 4250 6450
+	3400 6450 3500 6450
 Wire Wire Line
 	2700 6000 3150 6000
 Wire Wire Line
 	6250 4600 6750 4600
 Wire Wire Line
 	6250 3700 6750 3700
-Wire Wire Line
-	5450 1900 5450 2100
-Wire Wire Line
-	3150 1900 3150 2100
 Wire Wire Line
 	1800 3700 2250 3700
 Wire Wire Line
@@ -1018,8 +946,6 @@ Wire Wire Line
 	6250 4800 6750 4800
 Wire Wire Line
 	6250 3500 6750 3500
-Wire Wire Line
-	4150 1600 4150 2100
 Wire Wire Line
 	3550 6050 3550 5500
 Wire Wire Line
@@ -1033,13 +959,9 @@ Wire Wire Line
 Wire Wire Line
 	4150 6050 4150 5500
 Wire Wire Line
-	4000 6450 4000 7200
-Wire Wire Line
 	4350 6050 4350 5500
 Wire Wire Line
 	4450 6050 4450 5500
-Wire Wire Line
-	4850 5500 4850 7200
 Wire Wire Line
 	5050 6050 5050 5500
 Wire Wire Line
@@ -1047,53 +969,13 @@ Wire Wire Line
 Wire Wire Line
 	7500 5000 6250 5000
 Wire Wire Line
-	8500 2900 9450 2900
-Wire Wire Line
-	8500 3000 9450 3000
-Wire Wire Line
-	8500 3200 9450 3200
-Wire Wire Line
-	8500 3300 9450 3300
-Wire Wire Line
-	8500 3500 9450 3500
-Wire Wire Line
-	8500 3600 9450 3600
-Wire Wire Line
-	8500 3800 9450 3800
-Wire Wire Line
-	8500 3900 9450 3900
-Wire Wire Line
 	8050 6450 7600 6450
 Wire Wire Line
 	8050 6300 7600 6300
-Connection ~ 9350 5550
-Connection ~ 10500 5550
 Wire Wire Line
 	10500 5950 10500 6000
-Connection ~ 9950 5950
-Wire Wire Line
-	9950 5900 9950 5950
-Wire Wire Line
-	9350 5950 10500 5950
-Wire Wire Line
-	10400 5550 10700 5550
-Wire Wire Line
-	9500 5550 9500 5700
-Connection ~ 9350 6500
-Connection ~ 10500 6500
 Wire Wire Line
 	10500 6900 10500 6950
-Connection ~ 9950 6900
-Wire Wire Line
-	9950 6850 9950 6900
-Wire Wire Line
-	9350 6900 10500 6900
-Wire Wire Line
-	8750 6500 9500 6500
-Wire Wire Line
-	10400 6500 10700 6500
-Wire Wire Line
-	9500 6500 9500 6650
 Wire Wire Line
 	8750 6500 8750 5550
 Wire Notes Line
@@ -1104,51 +986,45 @@ Wire Notes Line
 	10650 4600 10100 4600
 Wire Notes Line
 	10100 4600 10100 4500
-Wire Wire Line
-	3150 1600 3150 2000
-Connection ~ 3150 2000
-Wire Wire Line
-	5450 1950 5450 1600
-Connection ~ 5450 1950
 $Comp
-L ossc_board-rescue:FILTER FB4
+L Device:Ferrite_Bead FB4
 U 1 1 5501F45A
 P 4650 6850
-F 0 "FB4" H 4650 7000 60  0000 C CNN
-F 1 "MPZ1608S221A" H 4650 6750 60  0000 C CNN
+F 0 "FB4" V 4700 7000 60  0000 C CNN
+F 1 "MPZ1608S221A" V 4550 6850 60  0000 C CNN
 F 2 "custom_components:SM0603_Resistor_libcms" H 4650 6850 60  0001 C CNN
 F 3 "~" H 4650 6850 60  0000 C CNN
 	1    4650 6850
-	0    -1   -1   0   
+	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:PWR_FLAG #FLG0209
+L power:PWR_FLAG #FLG0209
 U 1 1 5507737D
 P 3100 6450
 F 0 "#FLG0209" H 3100 6545 30  0001 C CNN
-F 1 "PWR_FLAG" H 3100 6630 30  0000 C CNN
+F 1 "PWR_FLAG" H 3100 6600 30  0000 C CNN
 F 2 "" H 3100 6450 60  0001 C CNN
 F 3 "" H 3100 6450 60  0000 C CNN
 	1    3100 6450
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:PWR_FLAG #FLG0210
+L power:PWR_FLAG #FLG0210
 U 1 1 55077394
 P 3500 6450
 F 0 "#FLG0210" H 3500 6545 30  0001 C CNN
-F 1 "PWR_FLAG" H 3500 6630 30  0000 C CNN
+F 1 "PWR_FLAG" H 3500 6600 30  0000 C CNN
 F 2 "" H 3500 6450 60  0001 C CNN
 F 3 "" H 3500 6450 60  0000 C CNN
 	1    3500 6450
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:PWR_FLAG #FLG0211
+L power:PWR_FLAG #FLG0211
 U 1 1 550773A0
 P 4500 6450
 F 0 "#FLG0211" H 4500 6545 30  0001 C CNN
-F 1 "PWR_FLAG" H 4500 6630 30  0000 C CNN
+F 1 "PWR_FLAG" H 4500 6600 30  0000 C CNN
 F 2 "" H 4500 6450 60  0001 C CNN
 F 3 "" H 4500 6450 60  0000 C CNN
 	1    4500 6450
@@ -1158,7 +1034,7 @@ Connection ~ 3100 6450
 Connection ~ 3500 6450
 Connection ~ 4500 6450
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0212
+L power:GND #PWR0212
 U 1 1 55189E4A
 P 3250 2100
 F 0 "#PWR0212" H 3250 2100 30  0001 C CNN
@@ -1169,7 +1045,7 @@ F 3 "" H 3250 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0213
+L power:GND #PWR0213
 U 1 1 55189E50
 P 3350 2100
 F 0 "#PWR0213" H 3350 2100 30  0001 C CNN
@@ -1180,7 +1056,7 @@ F 3 "" H 3350 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0214
+L power:GND #PWR0214
 U 1 1 55189E56
 P 3450 2100
 F 0 "#PWR0214" H 3450 2100 30  0001 C CNN
@@ -1191,7 +1067,7 @@ F 3 "" H 3450 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0215
+L power:GND #PWR0215
 U 1 1 55189E5C
 P 3550 2100
 F 0 "#PWR0215" H 3550 2100 30  0001 C CNN
@@ -1202,7 +1078,7 @@ F 3 "" H 3550 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0216
+L power:GND #PWR0216
 U 1 1 55189E62
 P 4750 2100
 F 0 "#PWR0216" H 4750 2100 30  0001 C CNN
@@ -1213,7 +1089,7 @@ F 3 "" H 4750 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0217
+L power:GND #PWR0217
 U 1 1 55189E68
 P 4850 2100
 F 0 "#PWR0217" H 4850 2100 30  0001 C CNN
@@ -1224,7 +1100,7 @@ F 3 "" H 4850 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0218
+L power:GND #PWR0218
 U 1 1 55189E6E
 P 4950 2100
 F 0 "#PWR0218" H 4950 2100 30  0001 C CNN
@@ -1235,7 +1111,7 @@ F 3 "" H 4950 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0219
+L power:GND #PWR0219
 U 1 1 55189E74
 P 5050 2100
 F 0 "#PWR0219" H 5050 2100 30  0001 C CNN
@@ -1246,7 +1122,7 @@ F 3 "" H 5050 2100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0220
+L power:GND #PWR0220
 U 1 1 55189E7A
 P 6250 3100
 F 0 "#PWR0220" H 6250 3100 30  0001 C CNN
@@ -1257,7 +1133,7 @@ F 3 "" H 6250 3100 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0221
+L power:GND #PWR0221
 U 1 1 55189E80
 P 6250 3200
 F 0 "#PWR0221" H 6250 3200 30  0001 C CNN
@@ -1268,7 +1144,7 @@ F 3 "" H 6250 3200 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0222
+L power:GND #PWR0222
 U 1 1 55189E86
 P 6250 3300
 F 0 "#PWR0222" H 6250 3300 30  0001 C CNN
@@ -1279,7 +1155,7 @@ F 3 "" H 6250 3300 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0223
+L power:GND #PWR0223
 U 1 1 55189E8C
 P 6250 3400
 F 0 "#PWR0223" H 6250 3400 30  0001 C CNN
@@ -1292,8 +1168,6 @@ $EndComp
 Wire Wire Line
 	4250 6450 4250 5500
 Connection ~ 4000 6450
-Wire Wire Line
-	8750 5550 9500 5550
 Text Label 8850 5550 0    60   ~ 0
 DVDD3V3
 Text Notes 6000 5350 0    60   ~ 0
@@ -1305,25 +1179,25 @@ max. 55mA (AVCC18)
 Text Notes 6000 5650 0    60   ~ 0
 max. 127mA (DVDD18)
 $Comp
-L ossc_board-rescue:C-RESCUE-ossc_board C110
+L Device:C C110
 U 1 1 5650C2A7
-P 7850 5800
-F 0 "C110" H 7850 5900 40  0000 L CNN
-F 1 "10u" H 7856 5715 40  0000 L CNN
-F 2 "custom_components:SM0603_Capa_libcms" H 7888 5650 30  0001 C CNN
-F 3 "~" H 7850 5800 60  0000 C CNN
-	1    7850 5800
+P 7850 5750
+F 0 "C110" H 7850 5850 40  0000 L CNN
+F 1 "10u" H 7856 5665 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 7888 5600 30  0001 C CNN
+F 3 "~" H 7850 5750 60  0000 C CNN
+	1    7850 5750
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0224
+L power:GND #PWR0224
 U 1 1 5650C43F
-P 7850 6000
-F 0 "#PWR0224" H 7850 6000 30  0001 C CNN
-F 1 "GND" H 7850 5930 30  0001 C CNN
-F 2 "" H 7850 6000 60  0001 C CNN
-F 3 "" H 7850 6000 60  0000 C CNN
-	1    7850 6000
+P 7850 5900
+F 0 "#PWR0224" H 7850 5900 30  0001 C CNN
+F 1 "GND" H 7850 5830 30  0001 C CNN
+F 2 "" H 7850 5900 60  0001 C CNN
+F 3 "" H 7850 5900 60  0000 C CNN
+	1    7850 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1331,9 +1205,9 @@ Wire Wire Line
 Text Label 7400 5600 0    60   ~ 0
 DVDD1V8
 Wire Wire Line
-	8950 4650 9550 4650
+	8950 4650 9250 4650
 $Comp
-L ossc_board-rescue:R R41
+L Device:R R41
 U 1 1 5653050C
 P 9250 4800
 F 0 "R41" V 9330 4800 50  0000 C CNN
@@ -1344,7 +1218,7 @@ F 3 "" H 9250 4800 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0225
+L power:GND #PWR0225
 U 1 1 5653059A
 P 9250 4950
 F 0 "#PWR0225" H 9250 4950 30  0001 C CNN
@@ -1358,7 +1232,7 @@ Text Label 9000 4650 0    60   ~ 0
 HPD
 Connection ~ 9250 4650
 $Comp
-L ossc_board-rescue:R R46
+L Device:R R46
 U 1 1 5686A65C
 P 8450 4100
 F 0 "R46" V 8530 4100 50  0000 C CNN
@@ -1369,7 +1243,7 @@ F 3 "" H 8450 4100 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:R R45
+L Device:R R45
 U 1 1 5686A73A
 P 8000 4200
 F 0 "R45" V 8000 4450 50  0000 C CNN
@@ -1382,21 +1256,21 @@ $EndComp
 Text Label 8300 4250 0    60   ~ 0
 DDC_SCL
 Wire Wire Line
-	8300 4250 9550 4250
+	8300 4250 8750 4250
 Wire Wire Line
-	7650 4350 9550 4350
+	7650 4350 8150 4350
 Text Label 7650 4350 0    60   ~ 0
 DDC_SDA
 $Comp
-L ossc_board-rescue:F_Small F2
+L Device:Polyfuse_Small F2
 U 1 1 5686BBED
 P 8200 4550
-F 0 "F2" H 8160 4610 50  0000 L CNN
-F 1 "MF-FSMF020X-2" H 8080 4490 50  0000 L CNN
+F 0 "F2" V 8300 4500 50  0000 L CNN
+F 1 "MF-FSMF020X-2" V 8100 4200 50  0000 L CNN
 F 2 "custom_components:SM0603_Resistor_libcms" H 8200 4550 60  0001 C CNN
 F 3 "" H 8200 4550 60  0000 C CNN
 	1    8200 4550
-	1    0    0    -1  
+	0    -1   -1   0   
 $EndComp
 Text HLabel 7600 6600 0    60   Input ~ 0
 5V
@@ -1411,13 +1285,13 @@ Text Label 7900 4550 0    60   ~ 0
 Connection ~ 8150 4350
 Connection ~ 8750 4250
 Wire Wire Line
-	8300 4550 9550 4550
+	8300 4550 8750 4550
 $Comp
-L ossc_board-rescue:PWR_FLAG #FLG0226
+L power:PWR_FLAG #FLG0226
 U 1 1 56874505
 P 8750 4550
 F 0 "#FLG0226" H 8750 4645 30  0001 C CNN
-F 1 "PWR_FLAG" H 8750 4730 30  0000 C CNN
+F 1 "PWR_FLAG" H 8750 4700 30  0000 C CNN
 F 2 "" H 8750 4550 60  0001 C CNN
 F 3 "" H 8750 4550 60  0000 C CNN
 	1    8750 4550
@@ -1429,7 +1303,7 @@ Text Label 9000 4550 0    60   ~ 0
 Text Label 7850 4100 0    60   ~ 0
 5V_FUSED
 $Comp
-L ossc_board-rescue:PCM1862 U8
+L custom_components:PCM1862 U8
 U 1 1 58C53DB8
 P 9050 1350
 F 0 "U8" H 9050 1250 50  0000 C CNN
@@ -1444,7 +1318,7 @@ NoConn ~ 9850 1800
 NoConn ~ 9850 1900
 NoConn ~ 9850 2000
 $Comp
-L ossc_board-rescue:C_Small C115
+L Device:C_Small C115
 U 1 1 58C542CB
 P 7700 2300
 F 0 "C115" H 7710 2370 50  0000 L CNN
@@ -1455,7 +1329,7 @@ F 3 "" H 7700 2300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:C_Small C118
+L Device:C_Small C118
 U 1 1 58C5445A
 P 7900 2300
 F 0 "C118" H 7910 2370 50  0000 L CNN
@@ -1466,7 +1340,7 @@ F 3 "" H 7900 2300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND #PWR0227
+L power:GND #PWR0227
 U 1 1 58C54895
 P 7900 2400
 F 0 "#PWR0227" H 7900 2150 50  0001 C CNN
@@ -1477,7 +1351,7 @@ F 3 "" H 7900 2400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND #PWR0228
+L power:GND #PWR0228
 U 1 1 58C54C59
 P 7700 2400
 F 0 "#PWR0228" H 7700 2150 50  0001 C CNN
@@ -1488,7 +1362,7 @@ F 3 "" H 7700 2400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND #PWR0229
+L power:GND #PWR0229
 U 1 1 58C54CD9
 P 8250 2300
 F 0 "#PWR0229" H 8250 2050 50  0001 C CNN
@@ -1499,10 +1373,10 @@ F 3 "" H 8250 2300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7700 2200 8250 2200
+	7700 2200 7900 2200
 Connection ~ 7900 2200
 $Comp
-L ossc_board-rescue:GND #PWR0230
+L power:GND #PWR0230
 U 1 1 58C54F8A
 P 8250 2000
 F 0 "#PWR0230" H 8250 1750 50  0001 C CNN
@@ -1529,7 +1403,7 @@ SCL
 Text Label 9950 1600 0    60   ~ 0
 SDA
 $Comp
-L ossc_board-rescue:GND #PWR0231
+L power:GND #PWR0231
 U 1 1 58C55532
 P 9850 1400
 F 0 "#PWR0231" H 9850 1150 50  0001 C CNN
@@ -1540,7 +1414,7 @@ F 3 "" H 9850 1400 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND #PWR0232
+L power:GND #PWR0232
 U 1 1 58C555B2
 P 9850 1300
 F 0 "#PWR0232" H 9850 1050 50  0001 C CNN
@@ -1551,7 +1425,7 @@ F 3 "" H 9850 1300 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:C_Small C120
+L Device:C_Small C120
 U 1 1 58C55680
 P 8050 1900
 F 0 "C120" H 8060 1970 50  0000 L CNN
@@ -1564,7 +1438,7 @@ $EndComp
 Wire Wire Line
 	8250 1900 8150 1900
 $Comp
-L ossc_board-rescue:GND #PWR0233
+L power:GND #PWR0233
 U 1 1 58C55A6C
 P 7950 1900
 F 0 "#PWR0233" H 7950 1650 50  0001 C CNN
@@ -1575,7 +1449,7 @@ F 3 "" H 7950 1900 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:C_Small C119
+L Device:C_Small C119
 U 1 1 58C55B89
 P 8050 1400
 F 0 "C119" H 8060 1470 50  0000 L CNN
@@ -1586,7 +1460,7 @@ F 3 "" H 8050 1400 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ossc_board-rescue:GND #PWR0234
+L power:GND #PWR0234
 U 1 1 58C55B90
 P 7950 1400
 F 0 "#PWR0234" H 7950 1150 50  0001 C CNN
@@ -1599,7 +1473,7 @@ $EndComp
 Wire Wire Line
 	8250 1400 8150 1400
 $Comp
-L ossc_board-rescue:GND #PWR0235
+L power:GND #PWR0235
 U 1 1 58C55D14
 P 8250 1500
 F 0 "#PWR0235" H 8250 1250 50  0001 C CNN
@@ -1612,7 +1486,7 @@ $EndComp
 Text Label 7950 2200 0    60   ~ 0
 DVDD3V3
 $Comp
-L ossc_board-rescue:C_Small C113
+L Device:C_Small C113
 U 1 1 58C56153
 P 7250 1700
 F 0 "C113" H 7260 1770 50  0000 L CNN
@@ -1623,7 +1497,7 @@ F 3 "" H 7250 1700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:C_Small C114
+L Device:C_Small C114
 U 1 1 58C56159
 P 7450 1700
 F 0 "C114" H 7460 1770 50  0000 L CNN
@@ -1634,7 +1508,7 @@ F 3 "" H 7450 1700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND #PWR0236
+L power:GND #PWR0236
 U 1 1 58C5615F
 P 7450 1800
 F 0 "#PWR0236" H 7450 1550 50  0001 C CNN
@@ -1645,7 +1519,7 @@ F 3 "" H 7450 1800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND #PWR0237
+L power:GND #PWR0237
 U 1 1 58C56165
 P 7250 1800
 F 0 "#PWR0237" H 7250 1550 50  0001 C CNN
@@ -1656,7 +1530,7 @@ F 3 "" H 7250 1800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 1600 8250 1600
+	7250 1600 7450 1600
 Text Label 7300 1600 0    60   ~ 0
 AVCC3V3
 Connection ~ 7450 1600
@@ -1665,7 +1539,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 1700 7650 1950
 Wire Wire Line
-	7650 1950 6900 1950
+	7650 1950 7100 1950
 Wire Wire Line
 	8250 1800 7750 1800
 Wire Wire Line
@@ -1673,7 +1547,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 2050 7250 2050
 $Comp
-L ossc_board-rescue:Crystal_Small Y2
+L Device:Crystal_Small Y2
 U 1 1 58C567D7
 P 7100 2050
 F 0 "Y2" H 7100 2150 50  0000 C CNN
@@ -1688,7 +1562,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 2150 7250 2050
 $Comp
-L ossc_board-rescue:C_Small C112
+L Device:C_Small C112
 U 1 1 58C56DEA
 P 7100 2250
 F 0 "C112" H 7110 2320 50  0000 L CNN
@@ -1699,7 +1573,7 @@ F 3 "" H 7100 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:C_Small C111
+L Device:C_Small C111
 U 1 1 58C56F6D
 P 6900 2250
 F 0 "C111" H 6910 2320 50  0000 L CNN
@@ -1714,7 +1588,7 @@ Wire Wire Line
 Connection ~ 7100 2150
 Connection ~ 7100 1950
 $Comp
-L ossc_board-rescue:GND #PWR0238
+L power:GND #PWR0238
 U 1 1 58C572B0
 P 6900 2350
 F 0 "#PWR0238" H 6900 2100 50  0001 C CNN
@@ -1725,7 +1599,7 @@ F 3 "" H 6900 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND #PWR0239
+L power:GND #PWR0239
 U 1 1 58C57345
 P 7100 2350
 F 0 "#PWR0239" H 7100 2100 50  0001 C CNN
@@ -1749,7 +1623,7 @@ I2S_BCK
 Text Label 1750 3500 0    60   ~ 0
 I2S_WS
 $Comp
-L ossc_board-rescue:C_Small C121
+L Device:C_Small C121
 U 1 1 58C58495
 P 8150 900
 F 0 "C121" H 8250 950 50  0000 L CNN
@@ -1760,7 +1634,7 @@ F 3 "" H 8150 900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:C_Small C116
+L Device:C_Small C116
 U 1 1 58C589CE
 P 7900 1000
 F 0 "C116" H 7910 1070 50  0000 L CNN
@@ -1773,7 +1647,7 @@ $EndComp
 Wire Wire Line
 	8250 1000 8000 1000
 $Comp
-L ossc_board-rescue:C_Small C123
+L Device:C_Small C123
 U 1 1 58C58E3D
 P 9950 900
 F 0 "C123" H 9960 970 50  0000 L CNN
@@ -1784,7 +1658,7 @@ F 3 "" H 9950 900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:C_Small C125
+L Device:C_Small C125
 U 1 1 58C58F41
 P 10100 1000
 F 0 "C125" H 10200 1000 50  0000 L CNN
@@ -1797,7 +1671,7 @@ $EndComp
 Wire Wire Line
 	9850 1000 10000 1000
 $Comp
-L ossc_board-rescue:C_Small C124
+L Device:C_Small C124
 U 1 1 58C59587
 P 9950 1100
 F 0 "C124" H 9850 1200 50  0000 L CNN
@@ -1808,7 +1682,7 @@ F 3 "" H 9950 1100 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ossc_board-rescue:C_Small C126
+L Device:C_Small C126
 U 1 1 58C5958D
 P 10100 1200
 F 0 "C126" H 9950 1250 50  0000 L CNN
@@ -1833,11 +1707,11 @@ AV3_AUD_L
 Text HLabel 7250 1000 0    60   Input ~ 0
 AV3_AUD_R
 Wire Wire Line
-	10050 900  10650 900 
+	10050 900  10550 900 
 Wire Wire Line
-	10050 1100 10650 1100
+	10050 1100 10450 1100
 Wire Wire Line
-	7250 900  8050 900 
+	7250 900  7400 900 
 Wire Wire Line
 	8750 4250 8750 4100
 Wire Wire Line
@@ -1849,7 +1723,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 4100 7850 4200
 $Comp
-L ossc_board-rescue:RClamp0524P D6
+L custom_components:RClamp0524P D6
 U 1 1 58DFBEE8
 P 9250 3100
 F 0 "D6" H 9250 3450 60  0000 C CNN
@@ -1860,7 +1734,7 @@ F 3 "" H 9300 3150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:RClamp0524P D7
+L custom_components:RClamp0524P D7
 U 1 1 58DFC1CD
 P 9250 3700
 F 0 "D7" H 9250 3350 60  0000 C CNN
@@ -1903,7 +1777,7 @@ Wire Wire Line
 Wire Wire Line
 	9450 3950 9550 3950
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0240
+L power:GND #PWR0240
 U 1 1 58DFCCCC
 P 8500 3100
 F 0 "#PWR0240" H 8500 3100 30  0001 C CNN
@@ -1913,23 +1787,8 @@ F 3 "" H 8500 3100 60  0000 C CNN
 	1    8500 3100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8500 3100 9400 3100
-Connection ~ 9100 3100
-Connection ~ 9400 3000
-Connection ~ 9100 3000
-Connection ~ 9400 2900
-Connection ~ 9100 2900
-Connection ~ 9400 3200
-Connection ~ 9100 3200
-Connection ~ 9400 3300
-Connection ~ 9100 3300
-Connection ~ 9400 3500
-Connection ~ 9100 3500
-Connection ~ 9400 3600
-Connection ~ 9100 3600
 $Comp
-L ossc_board-rescue:GND-RESCUE-ossc_board #PWR0241
+L power:GND #PWR0241
 U 1 1 58DFD42C
 P 8500 3700
 F 0 "#PWR0241" H 8500 3700 30  0001 C CNN
@@ -1940,18 +1799,11 @@ F 3 "" H 8500 3700 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8500 3700 9400 3700
-Connection ~ 9100 3700
-Connection ~ 9400 3800
-Connection ~ 9100 3800
-Connection ~ 9400 3900
-Connection ~ 9100 3900
-Wire Wire Line
 	7900 2100 8250 2100
 Wire Wire Line
 	7900 2100 7900 2200
 $Comp
-L ossc_board-rescue:R_Small R48
+L Device:R_Small R48
 U 1 1 58EABE34
 P 7400 1100
 F 0 "R48" H 7450 1200 50  0000 L CNN
@@ -1962,7 +1814,7 @@ F 3 "" H 7400 1100 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:R_Small R47
+L Device:R_Small R47
 U 1 1 58EAC1AE
 P 7400 800
 F 0 "R47" H 7450 900 50  0000 L CNN
@@ -1974,10 +1826,10 @@ F 3 "" H 7400 800 50  0000 C CNN
 $EndComp
 Connection ~ 7400 900 
 Wire Wire Line
-	7250 1000 7800 1000
+	7250 1000 7400 1000
 Connection ~ 7400 1000
 $Comp
-L ossc_board-rescue:GND #PWR0244
+L power:GND #PWR0244
 U 1 1 58EAC763
 P 7400 1200
 F 0 "#PWR0244" H 7400 950 50  0001 C CNN
@@ -1988,7 +1840,7 @@ F 3 "" H 7400 1200 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND #PWR0245
+L power:GND #PWR0245
 U 1 1 58EAC810
 P 7300 700
 F 0 "#PWR0245" H 7300 450 50  0001 C CNN
@@ -2001,7 +1853,7 @@ $EndComp
 Wire Wire Line
 	7300 700  7400 700 
 $Comp
-L ossc_board-rescue:R_Small R52
+L Device:R_Small R52
 U 1 1 58EACB53
 P 10550 1350
 F 0 "R52" H 10600 1350 50  0000 L CNN
@@ -2012,9 +1864,9 @@ F 3 "" H 10550 1350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10200 1200 10650 1200
+	10200 1200 10550 1200
 $Comp
-L ossc_board-rescue:GND #PWR0246
+L power:GND #PWR0246
 U 1 1 58EAD4D5
 P 10550 1450
 F 0 "#PWR0246" H 10550 1200 50  0001 C CNN
@@ -2025,7 +1877,7 @@ F 3 "" H 10550 1450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:R_Small R49
+L Device:R_Small R49
 U 1 1 58EAD708
 P 10450 750
 F 0 "R49" H 10500 750 50  0000 L CNN
@@ -2036,7 +1888,7 @@ F 3 "" H 10450 750 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:R_Small R51
+L Device:R_Small R51
 U 1 1 58EAD828
 P 10550 750
 F 0 "R51" H 10600 750 50  0000 L CNN
@@ -2051,7 +1903,7 @@ Wire Wire Line
 Wire Wire Line
 	9850 1600 10150 1600
 $Comp
-L ossc_board-rescue:R_Small R50
+L Device:R_Small R50
 U 1 1 58EAE229
 P 10450 1350
 F 0 "R50" H 10500 1350 50  0000 L CNN
@@ -2062,7 +1914,7 @@ F 3 "" H 10450 1350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L ossc_board-rescue:GND #PWR0247
+L power:GND #PWR0247
 U 1 1 58EAE3E9
 P 10450 1450
 F 0 "#PWR0247" H 10450 1200 50  0001 C CNN
@@ -2073,7 +1925,7 @@ F 3 "" H 10450 1450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10650 1000 10200 1000
+	10650 1000 10450 1000
 Wire Wire Line
 	10450 850  10450 1000
 Connection ~ 10450 1000
@@ -2087,7 +1939,7 @@ Wire Wire Line
 	10550 1250 10550 1200
 Connection ~ 10550 1200
 $Comp
-L ossc_board-rescue:GND #PWR0248
+L power:GND #PWR0248
 U 1 1 58EAF219
 P 10350 500
 F 0 "#PWR0248" H 10350 250 50  0001 C CNN
@@ -2098,7 +1950,7 @@ F 3 "" H 10350 500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ossc_board-rescue:GND #PWR0249
+L power:GND #PWR0249
 U 1 1 58EAF2D2
 P 10650 500
 F 0 "#PWR0249" H 10650 250 50  0001 C CNN
@@ -2118,4 +1970,257 @@ Wire Wire Line
 	10550 500  10650 500 
 NoConn ~ 8250 1100
 NoConn ~ 8250 1200
+Wire Wire Line
+	3650 6450 4000 6450
+Wire Wire Line
+	3100 6450 3250 6450
+Wire Wire Line
+	3500 6450 3650 6450
+Wire Wire Line
+	4500 6450 4650 6450
+Wire Wire Line
+	4000 6450 4250 6450
+Wire Wire Line
+	9250 4650 9550 4650
+Wire Wire Line
+	8150 4350 9550 4350
+Wire Wire Line
+	8750 4250 9550 4250
+Wire Wire Line
+	8750 4550 9550 4550
+Wire Wire Line
+	7900 2200 8250 2200
+Wire Wire Line
+	7450 1600 8250 1600
+Wire Wire Line
+	7100 1950 6900 1950
+Wire Wire Line
+	7400 900  8050 900 
+Wire Wire Line
+	7400 1000 7800 1000
+Wire Wire Line
+	10450 1000 10200 1000
+Wire Wire Line
+	10550 900  10650 900 
+Wire Wire Line
+	10450 1100 10650 1100
+Wire Wire Line
+	10550 1200 10650 1200
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 5501ED08
+P 3250 6850
+F 0 "FB1" V 3350 7000 60  0000 C CNN
+F 1 "MPZ1608S221A" V 3150 6850 60  0000 C CNN
+F 2 "custom_components:SM0603_Resistor_libcms" H 3250 6850 60  0001 C CNN
+F 3 "~" H 3250 6850 60  0000 C CNN
+	1    3250 6850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3250 6450 3250 6700
+Wire Wire Line
+	3250 7000 3250 7650
+Wire Wire Line
+	3650 7000 3650 7650
+Wire Wire Line
+	3650 6450 3650 6700
+Wire Wire Line
+	4650 7000 4650 7650
+Wire Wire Line
+	4650 6450 4650 6700
+Wire Wire Line
+	4850 5500 4850 7250
+Wire Wire Line
+	4400 6450 4400 7250
+Wire Wire Line
+	4000 6450 4000 7250
+Wire Wire Line
+	3400 6450 3400 7250
+Wire Wire Line
+	3000 6450 3000 7250
+Wire Wire Line
+	9350 5950 9950 5950
+Connection ~ 9950 5950
+Wire Wire Line
+	9950 5950 10500 5950
+Wire Wire Line
+	8750 5550 9350 5550
+Wire Wire Line
+	9500 5550 9500 5650
+Wire Wire Line
+	9500 5650 9650 5650
+Connection ~ 9500 5550
+Wire Wire Line
+	9500 5550 9650 5550
+Wire Wire Line
+	10250 5550 10500 5550
+Wire Wire Line
+	9350 6900 9950 6900
+Connection ~ 9950 6900
+Wire Wire Line
+	9950 6900 10500 6900
+Wire Wire Line
+	8750 6500 9350 6500
+Wire Wire Line
+	9500 6500 9500 6600
+Wire Wire Line
+	9500 6600 9650 6600
+Connection ~ 9500 6500
+Wire Wire Line
+	9500 6500 9650 6500
+Wire Wire Line
+	10250 6500 10500 6500
+Wire Wire Line
+	8500 3100 9100 3100
+Wire Wire Line
+	8500 3700 9100 3700
+Wire Wire Line
+	8500 3000 9100 3000
+Wire Wire Line
+	8500 2900 9100 2900
+Wire Wire Line
+	8500 3200 9100 3200
+Wire Wire Line
+	8500 3300 9100 3300
+Wire Wire Line
+	8500 3500 9100 3500
+Wire Wire Line
+	8500 3600 9100 3600
+Wire Wire Line
+	8500 3800 9100 3800
+Wire Wire Line
+	8500 3900 9100 3900
+Wire Wire Line
+	9400 2900 9450 2900
+Wire Wire Line
+	9400 3000 9450 3000
+Wire Wire Line
+	9400 3200 9450 3200
+Wire Wire Line
+	9400 3300 9450 3300
+Wire Wire Line
+	9400 3500 9450 3500
+Wire Wire Line
+	9400 3600 9450 3600
+Wire Wire Line
+	9400 3800 9450 3800
+Wire Wire Line
+	9400 3900 9450 3900
+Wire Wire Line
+	9100 3900 9400 3900
+Connection ~ 9100 3900
+Connection ~ 9400 3900
+Wire Wire Line
+	9400 3800 9100 3800
+Connection ~ 9400 3800
+Connection ~ 9100 3800
+Wire Wire Line
+	9100 3700 9400 3700
+Connection ~ 9100 3700
+Wire Wire Line
+	9400 3600 9100 3600
+Connection ~ 9400 3600
+Connection ~ 9100 3600
+Wire Wire Line
+	9100 3500 9400 3500
+Connection ~ 9100 3500
+Connection ~ 9400 3500
+Wire Wire Line
+	9400 3300 9100 3300
+Connection ~ 9400 3300
+Connection ~ 9100 3300
+Wire Wire Line
+	9100 3200 9400 3200
+Connection ~ 9100 3200
+Connection ~ 9400 3200
+Wire Wire Line
+	9400 3100 9100 3100
+Connection ~ 9100 3100
+Wire Wire Line
+	9100 3000 9400 3000
+Connection ~ 9100 3000
+Connection ~ 9400 3000
+Wire Wire Line
+	9400 2900 9100 2900
+Connection ~ 9400 2900
+Connection ~ 9100 2900
+Wire Wire Line
+	5450 1550 5450 2100
+Wire Wire Line
+	4150 1550 4150 2100
+Wire Wire Line
+	3150 1550 3150 2100
+$Comp
+L power:GND #PWR0203
+U 1 1 55040F04
+P 7050 3500
+F 0 "#PWR0203" H 7050 3500 30  0001 C CNN
+F 1 "GND" H 7050 3430 30  0001 C CNN
+F 2 "" H 7050 3500 60  0001 C CNN
+F 3 "" H 7050 3500 60  0000 C CNN
+	1    7050 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0202
+U 1 1 55040EFE
+P 7050 3700
+F 0 "#PWR0202" H 7050 3700 30  0001 C CNN
+F 1 "GND" H 7050 3630 30  0001 C CNN
+F 2 "" H 7050 3700 60  0001 C CNN
+F 3 "" H 7050 3700 60  0000 C CNN
+	1    7050 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C83
+U 1 1 5501F681
+P 6900 3500
+F 0 "C83" H 6900 3600 40  0000 L CNN
+F 1 "0.1u" H 6906 3415 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 6938 3350 30  0001 C CNN
+F 3 "~" H 6900 3500 60  0000 C CNN
+	1    6900 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C84
+U 1 1 5501F60B
+P 6900 3700
+F 0 "C84" H 6900 3800 40  0000 L CNN
+F 1 "0.1u" H 6906 3615 40  0000 L CNN
+F 2 "custom_components:SM0603_Capa_libcms" H 6938 3550 30  0001 C CNN
+F 3 "~" H 6900 3700 60  0000 C CNN
+	1    6900 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 4900 6350 4900
+Connection ~ 9350 5550
+Wire Wire Line
+	9350 5550 9500 5550
+Connection ~ 10500 5550
+Wire Wire Line
+	10500 5550 10700 5550
+Wire Wire Line
+	10500 5850 10500 5950
+Connection ~ 10500 5950
+Wire Wire Line
+	9350 5850 9350 5950
+Connection ~ 9350 6500
+Wire Wire Line
+	9350 6500 9500 6500
+Connection ~ 10500 6500
+Wire Wire Line
+	10500 6500 10700 6500
+Wire Wire Line
+	10500 6800 10500 6900
+Connection ~ 10500 6900
+Wire Wire Line
+	9350 6800 9350 6900
+Wire Wire Line
+	3150 5600 3150 5500
+Wire Wire Line
+	3150 5900 3150 6000
 $EndSCHEMATC
