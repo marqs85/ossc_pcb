@@ -137,7 +137,7 @@ $EndSheet
 Text Notes 5050 4850 0    60   ~ 0
 max. 230mA drawn
 Text Notes 1900 5450 0    60   ~ 0
-max. 543mA drawn
+max. 175mA drawn
 $Sheet
 S 8350 950  1650 5900
 U 54FF6758

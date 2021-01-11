@@ -1,5 +1,5 @@
-### Module positions - created on Mon Jul  3 23:41:56 2017 ###
-### Printed by Pcbnew version kicad 4.0.5+dfsg1-4
+### Module positions - created on Mon Jan 11 18:10:26 2021 ###
+### Printed by Pcbnew version kicad 5.1.7+dfsg1-1
 ## Unit = mm, Angle = deg.
 ## Side : top
 # Ref     Val            Package                                            PosX       PosY       Rot  Side
@@ -41,7 +41,7 @@ D2        LEDG           LED-0603                                        15.5490
 D6        RClamp0524P    SLP2510P8                                      120.1200   -50.3100  270.0000  top
 D7        RClamp0524P    SLP2510P8                                      120.1200   -53.3100  270.0000  top
 F2        MF-FSMF020X-2  SM0603_Resistor_libcms                         116.6900   -60.1400   90.0000  top
-Q2        BC857          SOT-23_Handsoldering                            54.1930   -25.3290  270.0000  top
+Q2        BC857          SOT-23_Handsoldering                            54.1930   -25.3290    0.0000  top
 R3        75             SM0603_Resistor_libcms                          35.9007   -59.5367    0.0000  top
 R4        75             SM0603_Resistor_libcms                          38.2629   -67.7155   90.0000  top
 R5        75             SM0603_Resistor_libcms                          53.1727   -74.0782    0.0000  top
