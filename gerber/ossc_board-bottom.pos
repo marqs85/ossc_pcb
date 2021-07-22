@@ -1,5 +1,5 @@
-### Module positions - created on Mon Jan 11 18:10:26 2021 ###
-### Printed by Pcbnew version kicad 5.1.7+dfsg1-1
+### Module positions - created on Thu Jul 22 11:00:30 2021 ###
+### Printed by Pcbnew version kicad 5.1.9+dfsg1-1
 ## Unit = mm, Angle = deg.
 ## Side : bottom
 # Ref     Val                Package                                          PosX       PosY       Rot  Side
@@ -111,7 +111,7 @@ D10       PESD5V0U4BW        SOT-665                                       49.02
 D11       PESD12VL2BT        SOT-23_Handsoldering                         125.4900   -73.7000  270.0000  bottom
 D12       PESD12VL2BT        SOT-23_Handsoldering                         125.5600   -34.5600  270.0000  bottom
 D13       PESD5V0V4UW        SOT-665                                       19.0700   -50.7600    0.0000  bottom
-D14       BZX84C5V1/SOT      SOT-23_Handsoldering                          19.1700   -18.9300    0.0000  bottom
+D14       BZX84C5V1/SOT      D_SOT-23_ANK                                  18.9700   -18.9300  270.0000  bottom
 D15       PESD5V0V4UW        SOT-665                                      119.9900   -57.4100  270.0000  bottom
 F1        F0603E1R25FSTR     SM0603_Resistor_libcms                        22.7300   -24.9100   90.0000  bottom
 FB1       MPZ1608S221A       SM0603_Resistor_libcms                       112.9920   -53.2210    0.0000  bottom
