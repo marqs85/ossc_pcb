@@ -18,6 +18,11 @@ As you know, QPFs are not that hard to solder as it initially looks. However, 2 
 These were relatively easy, but numerous. I could do them with good pace by first adding some solder (with a fine tip) to the other pad of a group of nearby 0603s (e.g. all 1uF caps). Then I put the components on place via pliers while simultaneously heating the pad where I had added solder earlier. Then I heated the section of the solderless pad which was still visible around the component outlines (easy with a fine tip if you aligned the component slightly towards the initially soldered pad) and added solder there which also attached simultaneously to the component. Just notice that several of the 0603 component pads are connected to gnd plane, and even if there is a thermal relief, they take longer to heat up. I used 320 celsius and a fine tip when soldering 0603 components.
 
 
+ESD diodes:
+
+The purpose of ESD diodes is to protect chips from electrostatic discharge potentially coming from outside via input or output ports. Many of the ESD diodes (D3-4, D6-10, D13, D15) are small and can be hard to solder manually. It is possible yet not recommended to operate OSSC without ESD diodes if soldering becomes too large of a challenge. In this case additional care during handling and use is needed - hot-plugging for example should be avoided at all costs.
+
+
 Misc tips:
 
 -U4 IC doesn't have very clear orientation mark on the package. In correct orientation, "C" out of the package code letters is closest to the oscillator next to U4.
