@@ -1,5 +1,5 @@
-### Module positions - created on 2023-06-05T20:19:05 EEST ###
-### Printed by Pcbnew version 6.0.11+dfsg-1
+### Footprint positions - created on 2023-08-01T21:32:37 EEST ###
+### Printed by KiCad version 7.0.6+dfsg-1
 ## Unit = mm, Angle = deg.
 ## Side : top
 # Ref     Val            Package                                            PosX       PosY       Rot  Side
@@ -49,10 +49,6 @@ J4        HDMI_CONN      HDMI_CONN-10029449-111RLF                      124.4000
 J5        5VDC_IN        BARREL_JACK_roundconn                           15.0020   -28.6490    0.0000  top
 J6        SJ1-3533NG     SJ1-3533NG                                     130.7060   -75.7300  180.0000  top
 J7        SJ1-3533NG     SJ1-3533NG                                     130.6980   -36.5760  180.0000  top
-MH1       CONN_1         1pin                                            11.1300   -20.6000    0.0000  top
-MH2       CONN_1         1pin                                           128.3000   -20.6000    0.0000  top
-MH3       CONN_1         1pin                                            11.1300   -82.2000    0.0000  top
-MH4       CONN_1         1pin                                           128.3000   -82.2000    0.0000  top
 Q2        BC857          SOT-23_Handsoldering                            54.1930   -25.3290    0.0000  top
 R3        75             SM0603_Resistor_libcms                          35.9007   -59.5367    0.0000  top
 R4        75             SM0603_Resistor_libcms                          38.2629   -67.7155   90.0000  top
